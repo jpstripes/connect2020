@@ -4,12 +4,21 @@ on:
   create:
     tags:
     - "*.*.*"
+  push:
+    branches:
+    - master
 
 jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v1
+
+    # Ensure this is tag event.
+    - name: Verify
+      run: |
+        export CREATE_EVENT_REF_TYPE=$(jq --raw-output .ref_type "$GITHUB_EVENT_PATH")
+        if [ "$CREATE_EVENT_REF_TYPE" != "tag" ]; then echo "ref_type is not a tag: ${CREATE_EVENT_REF_TYPE}" && exit 78; fi
 
     - name: Setup
       run: |
