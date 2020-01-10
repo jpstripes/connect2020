@@ -2,7 +2,7 @@
 
 ## Next
 
-## 0.1.2
+## 0.2.0
 
 - Feature: Enabled to upload release artifact on release
 
