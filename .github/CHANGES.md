@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.3.1
+
+- Cleanup: Removed verify step
+
 ## 0.3.0
 
 - Bugfix: Tag event seems wrong
