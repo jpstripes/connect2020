@@ -1,0 +1,52 @@
+version: '2.2'
+services:
+  wordpress:
+    image: wordpress:5.3.2-php7.2-apache
+    container_name: jpstripes_wordpress
+    privileged: true
+    volumes:
+      - ./theme:/var/www/html/wp-content/themes/connect2020
+    depends_on:
+      - mysql
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: password
+    ports:
+      - '8000:80'
+    expose:
+      - '8000'
+
+  mysql:
+    image: mysql/mysql-server:5.7.24
+    container_name: jpstripes_mysql
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
+    privileged: true
+    environment:
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: user
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: wordpress
+      TZ: 'UTC'
+    volumes:
+      # SQLs stored in this directory will executed on clean run.
+      # Remove `db/data`, then recreate container if you want to reset.
+      - ./db/initdb.d:/docker-entrypoint-initdb.d
+      # Overridden to enable bind-address.
+      - ./db/mysql.cnf:/etc/my.cnf
+      # Persist data locally.
+      - ./db/data:/var/lib/mysql
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+
+  adminer:
+    image: adminer:4.7.5
+    container_name: jpstripes_adminer
+    ports:
+      - '8080:8080'
+    expose:
+      - '8080'
