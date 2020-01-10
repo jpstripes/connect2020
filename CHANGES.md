@@ -8,5 +8,6 @@
 
 ## Next
 
+- Feature: Added theme skeleton
 - Feature: Setup WordPress in Docker
 - Feature: Init
