@@ -1,0 +1,44 @@
+.home {
+  &-tagline {
+    color: #fff;
+    margin-top: 140px;
+    padding-bottom: 200px;
+
+    @include desktop {
+      text-align: center;
+    }
+
+    &__symbol {
+      background: url('../../template/assets/images/home/tagline.svg') no-repeat
+        center top;
+      background-size: contain;
+      margin-bottom: 80px;
+
+      @include mobile {
+        height: 140px;
+      }
+
+      @include tablet {
+        height: 200px;
+      }
+
+      @include desktop {
+        height: 240px;
+      }
+    }
+
+    &__message {
+      font-size: 24px;
+      margin-bottom: 60px;
+
+      strong {
+        font-size: 30px;
+      }
+    }
+
+    &__nav {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+  }
+}

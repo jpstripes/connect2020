@@ -3,12 +3,14 @@
 BIN := ./node_modules/.bin
 BUILD := ./build
 
+PARCEL_OPTS := --out-dir template/dist --public-url /wp-content/themes/jpstripes/dist
+
 clean:
 	rm -Rf $(BUILD)
 
 build: clean
 	@echo "Bundling assets.."
-	$(BIN)/parcel build src/app.js --out-dir template/dist --no-source-maps
+	$(BIN)/parcel build src/app.js --no-source-maps $(PARCEL_OPTS)
 	@echo "Packing files.."
 	mkdir -p $(BUILD)
 	cd template && zip -r -q .$(BUILD)/theme.zip *
@@ -17,7 +19,7 @@ build: clean
 	@echo "Done!"
 
 watch:
-	$(BIN)/parcel watch src/app.js --out-dir template/dist --public-url /wp-content/themes/jpstripes/
+	$(BIN)/parcel watch src/app.js $(PARCEL_OPTS)
 
 pretty:
 	$(BIN)/prettier --write "{src,template}/**"

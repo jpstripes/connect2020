@@ -2,6 +2,7 @@
 
 ## Next
 
+- Feature: Created front page
 - Cleanup: Removed parcel-plugin-prettier due to build breakage
 
 ## 0.5.0
