@@ -8,6 +8,8 @@
 
 ## Next
 
+## 0.5.0
+
 - Feature: Added GitHub Actions Badge
 
 ## 0.1.1
