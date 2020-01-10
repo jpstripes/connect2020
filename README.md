@@ -1,6 +1,6 @@
 # JP_Stripes Connect 2020
 
-[![Actions Status](https://github.com/jpstripes/connect2020/workflows/Release/badge.svg)](https://github.com/jpstripes/connect2020/actions)
+[![Actions Status](https://github.com/jpstripes/connect2020/workflows/Release/badge.svg?branch=master)](https://github.com/jpstripes/connect2020/actions)
 
 ![](https://avatars2.githubusercontent.com/u/59723053?s=400&u=eaaaad1fb0af8772af1f51e4071cc175cb6d86cf&v=4)
 
