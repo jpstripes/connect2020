@@ -1,11 +1,12 @@
 version: '2.2'
 services:
+
   wordpress:
     image: wordpress:5.3.2-php7.2-apache
     container_name: jpstripes_wordpress
     privileged: true
     volumes:
-      - ./theme:/var/www/html/wp-content/themes/connect2020
+      - ./theme/template:/var/www/html/wp-content/themes/jpstripes
     depends_on:
       - mysql
     environment:
@@ -17,6 +18,17 @@ services:
       - '8000:80'
     expose:
       - '8000'
+
+  theme:
+    build:
+      context: theme
+    image: jpstripes_theme
+    container_name: jpstripes_theme
+    volumes:
+      # Exclude container directory overwritten by host.
+      - /theme/node_modules
+      # Then, bind volumes.
+      - ./theme:/theme
 
   mysql:
     image: mysql/mysql-server:5.7.24

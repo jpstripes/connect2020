@@ -8,6 +8,7 @@
 
 ## Next
 
+- Feature: Created Theme container to build assets via Parcel
 - Feature: Added theme skeleton
 - Feature: Setup WordPress in Docker
 - Feature: Init
