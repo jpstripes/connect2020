@@ -2,6 +2,8 @@
 
 ## Next
 
+## 0.3.0
+
 - Bugfix: Tag event seems wrong
 - Bugfix: Ensured to run release workflow on tag creation
 
