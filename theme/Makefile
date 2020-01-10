@@ -20,4 +20,4 @@ watch:
 	$(BIN)/parcel watch src/app.js --out-dir template/dist --public-url /wp-content/themes/jpstripes/
 
 pretty:
-	$(BIN)/prettier --write "src/**"
+	$(BIN)/prettier --write "{src,template}/**"
