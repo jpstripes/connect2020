@@ -8,6 +8,7 @@
 
 ## Next
 
+- Feature: Updated SQL files to apply theme changes
 - Feature: Created Theme container to build assets via Parcel
 - Feature: Added theme skeleton
 - Feature: Setup WordPress in Docker
