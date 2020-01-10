@@ -1,13 +1,13 @@
 name: Release
 
 on:
-  create:
-    tags:
-    - "*.*.*"
-  # push:
-  #   branches:
-  #   - master
-  #   - develop
+  # create:
+  #   tags:
+  #   - "*.*.*"
+  push:
+    branches:
+    # - master
+    - develop
 
 jobs:
   build:
