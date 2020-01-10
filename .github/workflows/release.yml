@@ -4,6 +4,10 @@ on:
   create:
     tags:
     - "*.*.*"
+  # push:
+  #   branches:
+  #   - master
+  #   - develop
 
 jobs:
   build:
@@ -23,7 +27,7 @@ jobs:
 
     - name: Build
       run: |
-        docker-compose exec theme bash -c "make build"
+        docker-compose exec --tty theme bash -c "make build"
 
     - name: Create Release
       id: create_release
