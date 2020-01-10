@@ -8,6 +8,7 @@
 
 ## Next
 
+- Feature: Added reset command to get clean environment
 - Feature: Updated SQL files to apply theme changes
 - Feature: Created Theme container to build assets via Parcel
 - Feature: Added theme skeleton

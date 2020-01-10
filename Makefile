@@ -10,3 +10,11 @@ up:
 
 down:
 	$(COMPOSE) kill
+
+reset: down
+	rm -Rf ./db/data
+	docker rm -f jpstripes_mysql
+	$(MAKE) build
+	$(MAKE) up
+	@echo ""
+	@echo "Reset done! Wait for a while, then visit fresh and clean website."

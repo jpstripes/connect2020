@@ -22,6 +22,10 @@ Strongly recommended to use Mac, since this repository uses Makefile to alias so
 
     make down
 
+### Reset cluster
+
+    make reset
+
 ## Hosts and Passwords
 
 ### WordPress
