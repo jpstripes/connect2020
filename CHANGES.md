@@ -8,6 +8,10 @@
 
 ## Next
 
+## 0.5.0
+
+- Feature: Added GitHub Actions Badge
+
 ## 0.1.1
 
 - Bugfix: Disabled to expose MySQL port since it conflicts on GitHub Actions
