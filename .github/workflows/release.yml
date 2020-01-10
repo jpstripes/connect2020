@@ -23,7 +23,7 @@ jobs:
 
     - name: Build
       run: |
-        docker-compose exec theme bash -c "make build"
+        docker-compose exec -T theme bash -c "make build"
 
     - name: Create Release
       id: create_release
