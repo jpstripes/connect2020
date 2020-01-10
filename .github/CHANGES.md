@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.4.0
+
+- Minor: Changed release message
+
 ## 0.3.1
 
 - Cleanup: Removed verify step
