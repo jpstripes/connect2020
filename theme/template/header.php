@@ -18,6 +18,8 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+
+  <link rel="stylesheet" href="<?=get_template_directory_uri(); ?>/dist/app.css">
 </head>
 
 <body <?php body_class(); ?>>
