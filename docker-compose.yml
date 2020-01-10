@@ -50,10 +50,6 @@ services:
       - ./db/mysql.cnf:/etc/my.cnf
       # Persist data locally.
       - ./db/data:/var/lib/mysql
-    ports:
-      - '3306:3306'
-    expose:
-      - '3306'
 
   adminer:
     image: adminer:4.7.5

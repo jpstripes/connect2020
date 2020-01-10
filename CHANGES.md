@@ -8,6 +8,10 @@
 
 ## Next
 
+## 0.1.1
+
+- Bugfix: Disabled to expose MySQL port since it conflicts on GitHub Actions
+
 ## 0.1.0
 
 - Feature: Created GitHub Actions to release theme artifact
