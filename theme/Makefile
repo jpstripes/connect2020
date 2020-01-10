@@ -1,4 +1,4 @@
-.PHONY: watch
+.PHONY: build watch pretty
 
 BIN := ./node_modules/.bin
 BUILD := ./build
@@ -18,3 +18,6 @@ build: clean
 
 watch:
 	$(BIN)/parcel watch src/app.js --out-dir template/dist --public-url /wp-content/themes/jpstripes/
+
+pretty:
+	$(BIN)/prettier --write "src/**"

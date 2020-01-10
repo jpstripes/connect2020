@@ -13,3 +13,7 @@ Development container for WordPress theme.
 ## Watch
 
     make watch
+
+## Pretty
+
+    make pretty
