@@ -8,6 +8,8 @@
 
 ## Next
 
+## 0.1.0
+
 - Feature: Created GitHub Actions to release theme artifact
 - Feature: Added reset command to get clean environment
 - Feature: Updated SQL files to apply theme changes
