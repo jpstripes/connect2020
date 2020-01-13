@@ -2,6 +2,7 @@
 
 ## Next
 
+- Feature: Binded default page template
 - Feature: Binded news template
 - Feature: Binded post template
 - Cleanup: Removed unused features

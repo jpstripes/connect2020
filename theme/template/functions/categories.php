@@ -1,5 +1,10 @@
 <?php
 /**
+ * DRYed category names.
+ */
+define('NEWS_CATEGORY', 'news');
+
+/**
  * Initializer script to add categories.
  * You must visit WP admin screen to run this step.
  */
@@ -7,7 +12,7 @@ function setup_categories() {
   // Predefined categories.
   $categories = [
     (object) [
-      'slug' => 'news',
+      'slug' => NEWS_CATEGORY,
       'title' => 'ニュース'
     ],
   ];

@@ -4,7 +4,7 @@
  */
 
 // Resolve `news` category.
-$cat = get_category_by_slug('news');
+$cat = get_category_by_slug(NEWS_CATEGORY);
 
 // Retrieve all posts.
 $posts = get_posts([
