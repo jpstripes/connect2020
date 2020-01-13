@@ -2,6 +2,8 @@
 
 ## Next
 
+- Feature: Binded post template
+- Cleanup: Removed unused features
 - Feature: Created sub page and partials
 - Feature: Created front page
 - Cleanup: Removed parcel-plugin-prettier due to build breakage
