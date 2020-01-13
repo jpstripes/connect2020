@@ -3,6 +3,8 @@
  * DRYed category names.
  */
 define('NEWS_CATEGORY', 'news');
+define('SPEAKER_SPONSORED', 'sponsored-speakers');
+define('SPEAKER_COMMUNITY', 'community-speakers');
 define('SPONSOR_PLATINUM', 'platinum-sponsors');
 define('SPONSOR_GOLD', 'gold-sponsors');
 define('SPONSOR_SILVER', 'silver-sponsors');
@@ -10,6 +12,7 @@ define('SPONSOR_SILVER', 'silver-sponsors');
 /**
  * Page names.
  */
+define('SPEAKERS_PAGE', 'speakers');
 define('SPONSORS_PAGE', 'sponsors');
 
 /**
@@ -23,6 +26,14 @@ function setup_categories()
     (object) [
       'slug' => NEWS_CATEGORY,
       'title' => 'News'
+    ],
+    (object) [
+      'slug' => SPEAKER_SPONSORED,
+      'title' => 'Speakers (Sponsored)'
+    ],
+    (object) [
+      'slug' => SPEAKER_COMMUNITY,
+      'title' => 'Speakers (Community)'
     ],
     (object) [
       'slug' => SPONSOR_PLATINUM,

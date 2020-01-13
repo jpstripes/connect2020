@@ -2,6 +2,7 @@
 
 ## Next
 
+- Feature: Created speakers page
 - Refactor: DRYed subpage headers
 - Feature: Created sponsors page
 - Feature: Binded default page template

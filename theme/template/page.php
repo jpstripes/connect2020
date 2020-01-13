@@ -7,6 +7,11 @@ switch ($post->post_name) {
     include_once get_template_directory() . '/pages/news.php';
     break;
 
+  case SPEAKERS_PAGE:
+    include_once get_template_directory() . '/pages/speakers.php';
+    get_footer();
+    break;
+
   case SPONSORS_PAGE:
     include_once get_template_directory() . '/pages/sponsors.php';
     get_footer();

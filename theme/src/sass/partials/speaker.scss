@@ -1,0 +1,49 @@
+.speaker {
+
+  @include mobile-tablet {
+    margin-bottom: 60px;
+    padding: 36px 24px;
+  }
+
+  @include desktop {
+    margin-bottom: 60px;
+    padding: 36px 24px;
+  }
+
+  &__header {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    background: #fff;
+    justify-content: center;
+
+    @include mobile-tablet {
+      margin-bottom: 60px;
+      padding: 36px 24px;
+    }
+
+    @include desktop {
+      margin-bottom: 60px;
+      padding: 36px 24px;
+    }
+  }
+
+  &__summary {
+    color: inherit;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 14px;
+
+    &-image {
+      margin-bottom: 4px;
+    }
+
+    &-name {
+      font-size: 24px;
+    }
+  }
+}

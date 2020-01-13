@@ -19,6 +19,12 @@
     <a href="news-article.php">news article</a>
   </li>
   <li>
+    <a href="speakers.php">speakers</a>
+  </li>
+  <li>
+    <a href="speaker.php">speaker</a>
+  </li>
+  <li>
     <a href="sponsors.php">sponsors</a>
   </li>
   <li>
