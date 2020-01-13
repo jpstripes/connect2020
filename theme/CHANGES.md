@@ -2,6 +2,7 @@
 
 ## Next
 
+- Refactor: DRYed subpage headers
 - Feature: Created sponsors page
 - Feature: Binded default page template
 - Feature: Binded news template

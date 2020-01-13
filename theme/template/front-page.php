@@ -30,4 +30,6 @@
   </div>
 </header>
 
+<? include get_template_directory() . '/pages/sponsors.php'; ?>
+
 <?php get_footer(); ?>
