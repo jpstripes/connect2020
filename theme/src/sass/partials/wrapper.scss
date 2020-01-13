@@ -1,0 +1,9 @@
+.wrapper {
+  @include mobile-tablet {
+    padding: 20px 0;
+  }
+
+  @include desktop {
+    padding: 80px 0;
+  }
+}

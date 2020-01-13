@@ -1,3 +1,5 @@
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php'; ?>
+
 <?php get_header(); ?>
 
 <header class="header header--home">
@@ -29,7 +31,5 @@
     </div>
   </div>
 </header>
-
-<? include get_template_directory() . '/pages/sponsors.php'; ?>
 
 <?php get_footer(); ?>

@@ -1,0 +1,56 @@
+.footer {
+  background: #4648af;
+  padding: 40px 0 30px;
+
+  &__logo {
+    width: 180px;
+  }
+
+  &__social {
+    padding: 40px 0 80px;
+    text-align: center;
+  }
+
+  &__nav {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+
+    @include mobile-tablet {
+      margin-bottom: 40px;
+    }
+
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 80px;
+    }
+
+    &-item {
+      margin-bottom: 6px;
+    }
+
+    &-link {
+      color: #fff;
+      padding: 8px 14px;
+
+      &:hover {
+        color: #fff;
+      }
+
+      &:visited {
+        color: #fff;
+      }
+    }
+  }
+
+  &__copyright {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-style: normal;
+    padding-top: 20px;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+}

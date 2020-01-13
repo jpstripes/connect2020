@@ -1,36 +1,31 @@
 <?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package _s
- */
+get_header();
 
-get_header(); ?>
+switch (get_post_type($post->ID)) {
+  // TODO: might cause high load when post grows.
+  // Consider to refactor to get the post once, then match with the categories.
+  case in_category(SPEAKER_SPONSORED, $post->ID):
+  case in_category(SPEAKER_COMMUNITY, $post->ID):
+    include_once get_template_directory() . '/posts/speaker.php';
+    break;
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+  // TODO: might cause high load when post grows.
+  // Consider to refactor to get the post once, then match with the categories.
+  case in_category(SPONSOR_PLATINUM, $post->ID):
+  case in_category(SPONSOR_GOLD, $post->ID):
+  case in_category(SPONSOR_SILVER, $post->ID):
+    include_once get_template_directory() . '/posts/sponsor.php';
+    break;
 
-		<?php while (have_posts()):
-    the_post();
+  case in_category(NEWS_CATEGORY, $post->ID):
+    include_once get_template_directory() . '/_includes/subpage-header.php';
+    include_once get_template_directory() . '/posts/news.php';
+    break;
 
-    get_template_part('template-parts/content', get_post_type());
+  default:
+    include_once get_template_directory() . '/_includes/subpage-header.php';
+    include_once get_template_directory() . '/posts/default.php';
+    break;
+}
 
-    the_post_navigation();
-
-    // If comments are open or we have at least one comment, load up the comment template.
-    if (comments_open() || get_comments_number()):
-      comments_template();
-    endif;
-  endwhile;
-// End of the loop.
-?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar();
 get_footer();
-

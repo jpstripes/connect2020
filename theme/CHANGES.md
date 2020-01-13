@@ -2,6 +2,15 @@
 
 ## Next
 
+- Feature: Created timetable page
+- Feature: Created speakers page
+- Refactor: DRYed subpage headers
+- Feature: Created sponsors page
+- Feature: Binded default page template
+- Feature: Binded news template
+- Feature: Binded post template
+- Cleanup: Removed unused features
+- Feature: Created sub page and partials
 - Feature: Created front page
 - Cleanup: Removed parcel-plugin-prettier due to build breakage
 
