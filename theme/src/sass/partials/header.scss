@@ -26,4 +26,17 @@
       background-size: cover;
     }
   }
+
+  &--subpage {
+    background: url('../../template/assets/images/home/hero.png') no-repeat
+      center top;
+
+    @include mobile-tablet {
+      // background-size: contain;
+    }
+
+    @include desktop {
+      background-size: cover;
+    }
+  }
 }

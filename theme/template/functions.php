@@ -177,3 +177,9 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
   require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Custom functions.
+ */
+include_once(dirname(__FILE__).'/functions/categories.php');
+include_once(dirname(__FILE__).'/functions/features.php');

@@ -2,6 +2,7 @@
 
 ## Next
 
+- Feature: Created sub page and partials
 - Feature: Created front page
 - Cleanup: Removed parcel-plugin-prettier due to build breakage
 

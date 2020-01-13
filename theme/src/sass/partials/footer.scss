@@ -1,0 +1,40 @@
+.footer {
+  background: #4648AF;
+  padding: 40px 0 30px;
+
+  &__logo {
+    width: 180px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 80px;
+    padding-left: 0;
+
+    &-item {
+      margin-bottom: 6px;
+    }
+
+    &-link {
+      color: #fff;
+      padding: 8px 14px;
+
+      &:visited {
+        color: #fff;
+      }
+    }
+  }
+
+  &__copyright {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-style: normal;
+    padding-top: 20px;
+    text-decoration: none;
+    opacity: .8;
+  }
+}

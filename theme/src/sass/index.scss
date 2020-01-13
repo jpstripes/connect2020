@@ -4,12 +4,8 @@
 // Definitions
 $base-color: #3f3b3a;
 
-// Partials
-@import './partials/navbar';
-@import './partials/header';
-
-// Pages
-@import './pages/home';
+@import './partials/index';
+@import './pages/index';
 
 body {
   background-color: #f6f6f6;

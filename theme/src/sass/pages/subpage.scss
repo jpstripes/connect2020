@@ -1,0 +1,16 @@
+.subpage {
+  &__hero {
+    padding: 80px 0 80px;
+
+    &-title {
+      color: #fff;
+      font-size: 46px;
+      text-align: center;
+    }
+  }
+
+  &__footer {
+    padding: 80px 0 0;
+    text-align: center;
+  }
+}
