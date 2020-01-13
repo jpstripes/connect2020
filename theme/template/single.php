@@ -10,6 +10,10 @@ switch (get_post_type($post->ID)) {
     include get_template_directory() . '/posts/sponsor.php';
     break;
 
+  case in_category(NEWS_CATEGORY, $post->ID):
+    include get_template_directory() . '/posts/news.php';
+    break;
+
   default:
     include get_template_directory() . '/posts/default.php';
     break;
