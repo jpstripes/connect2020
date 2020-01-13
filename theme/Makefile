@@ -3,7 +3,7 @@
 BIN := ./node_modules/.bin
 BUILD := ./build
 
-PARCEL_OPTS := --out-dir template/dist --public-url /wp-content/themes/jpstripes/dist
+PARCEL_OPTS := --out-dir template/dist --public-url /wp-content/themes/connect2020/dist
 
 clean:
 	rm -Rf $(BUILD)

@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.6.2
+
+- Bugfix: Parcel output still was pointing jpstripes
+
 ## 0.6.1
 
 - Bugfix: Mounted theme name should be names as last segment of GitHub URL (connect2020)
