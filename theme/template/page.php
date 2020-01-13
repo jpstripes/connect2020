@@ -1,39 +1,26 @@
 <?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package _s
- */
+get_header();
+include_once get_template_directory() . '/_includes/subpage-header.php';
 
-get_header(); ?>
+switch ($post->post_name) {
+  case NEWS_CATEGORY:
+    include_once get_template_directory() . '/pages/news.php';
+    break;
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+  case SPEAKERS_PAGE:
+    include_once get_template_directory() . '/pages/speakers.php';
+    get_footer();
+    break;
 
-		<?php while (have_posts()):
-    the_post();
+  case SPONSORS_PAGE:
+    include_once get_template_directory() . '/pages/sponsors.php';
+    get_footer();
+    break;
 
-    get_template_part('template-parts/content', 'page');
+  default:
+    include_once get_template_directory() . '/pages/default.php';
+    get_footer();
+    break;
+}
 
-    // If comments are open or we have at least one comment, load up the comment template.
-    if (comments_open() || get_comments_number()):
-      comments_template();
-    endif;
-  endwhile;
-// End of the loop.
-?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar();
 get_footer();
-

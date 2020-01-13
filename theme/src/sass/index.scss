@@ -1,3 +1,30 @@
-h1 {
-  font-size: 30px;
+// Utils
+@import './utils/mediaquery';
+
+// Definitions
+$base-color: #3f3b3a;
+
+@import './partials/index';
+@import './pages/index';
+
+body {
+  background-color: #f6f6f6;
+  background-repeat: no-repeat;
+  background-size: 100% 600px;
+  color: $base-color;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 16px;
+
+  @include mobile-tablet {
+    div:hover,
+    a:hover {
+      transform: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1220px;
+  }
 }

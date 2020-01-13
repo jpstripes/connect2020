@@ -6,7 +6,7 @@
   "devDependencies": {
     "@prettier/plugin-php": "^0.12.0",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-prettier": "^0.2.1",
+    "parcel-plugin-imagemin": "^3.0.0",
     "prettier": "^1.19.1",
     "sass": "^1.24.4",
     "typescript": "^3.7.4"

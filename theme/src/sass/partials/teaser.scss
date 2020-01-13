@@ -1,0 +1,33 @@
+.teaser {
+  background: #fff;
+
+  @include mobile-tablet {
+    margin-bottom: 60px;
+    padding: 36px 24px;
+  }
+
+  @include desktop {
+    margin-bottom: 60px;
+    padding: 36px 24px;
+  }
+
+  &__aside {
+    @include mobile-tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__date {
+    color: #aaa;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 34px;
+  }
+
+  &__summary {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+}
