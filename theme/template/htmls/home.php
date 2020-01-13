@@ -1,4 +1,4 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT'].'/wp-load.php'); ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php'; ?>
 
 <?php get_header(); ?>
 

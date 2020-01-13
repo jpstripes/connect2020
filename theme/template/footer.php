@@ -5,8 +5,7 @@
  */
 $footer_menus = get_pages([
   'sort_column' => 'menu_order'
-]);
-?>
+]); ?>
 
 <footer class="footer">
   <div class="container">

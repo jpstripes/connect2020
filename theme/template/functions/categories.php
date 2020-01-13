@@ -8,13 +8,14 @@ define('NEWS_CATEGORY', 'news');
  * Initializer script to add categories.
  * You must visit WP admin screen to run this step.
  */
-function setup_categories() {
+function setup_categories()
+{
   // Predefined categories.
   $categories = [
     (object) [
       'slug' => NEWS_CATEGORY,
       'title' => 'ニュース'
-    ],
+    ]
   ];
 
   foreach ($categories as $c) {
@@ -27,14 +28,16 @@ function setup_categories() {
     $params = [
       'cat_name' => $c->title,
       'category_nicename' => $c->slug,
-      'category_parent' => '',
+      'category_parent' => ''
     ];
 
     $got = wp_insert_category($params, true);
 
     if ($got->errors) {
       print_r($got);
-      die('failed to create category {$c->slug}, see theme functions/categories.php for more information');
+      die(
+        'failed to create category {$c->slug}, see theme functions/categories.php for more information'
+      );
     }
   }
 }
