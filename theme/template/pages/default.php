@@ -19,10 +19,6 @@
         <main class="article">
           <?= $post->post_content ?>
         </main>
-
-        <footer class="text-center">
-          <?php include get_template_directory() . '/_includes/social.php'; ?>
-        </footer>
       </div>
     </div>
   </div>

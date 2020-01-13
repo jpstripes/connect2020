@@ -7,6 +7,10 @@ $footer_menus = get_pages([
   'sort_column' => 'menu_order'
 ]); ?>
 
+<nav class="footer__social">
+  <?php include(get_template_directory().'/_includes/social.php'); ?>
+</nav>
+
 <footer class="footer">
   <div class="container">
     <div class="row">

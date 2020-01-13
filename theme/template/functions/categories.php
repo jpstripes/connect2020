@@ -3,6 +3,14 @@
  * DRYed category names.
  */
 define('NEWS_CATEGORY', 'news');
+define('SPONSOR_PLATINUM', 'platinum-sponsors');
+define('SPONSOR_GOLD', 'gold-sponsors');
+define('SPONSOR_SILVER', 'silver-sponsors');
+
+/**
+ * Page names.
+ */
+define('SPONSORS_PAGE', 'sponsors');
 
 /**
  * Initializer script to add categories.
@@ -14,8 +22,20 @@ function setup_categories()
   $categories = [
     (object) [
       'slug' => NEWS_CATEGORY,
-      'title' => 'ニュース'
-    ]
+      'title' => 'News'
+    ],
+    (object) [
+      'slug' => SPONSOR_PLATINUM,
+      'title' => 'Sponsors (Platinum)'
+    ],
+    (object) [
+      'slug' => SPONSOR_GOLD,
+      'title' => 'Sponsors (Gold)'
+    ],
+    (object) [
+      'slug' => SPONSOR_SILVER,
+      'title' => 'Sponsors (Silver)'
+    ],
   ];
 
   foreach ($categories as $c) {

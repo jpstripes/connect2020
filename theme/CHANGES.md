@@ -2,6 +2,7 @@
 
 ## Next
 
+- Feature: Created sponsors page
 - Feature: Binded default page template
 - Feature: Binded news template
 - Feature: Binded post template

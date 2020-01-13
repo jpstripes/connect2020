@@ -8,12 +8,8 @@
       <div class="col-12">
         <section class="subpage__hero">
           <h1 class="subpage__hero-title">
-            Some News Article
+            Sponsers
           </h1>
-
-          <footer class="subpage__footer">
-            <?php include(get_template_directory().'/_includes/social.php'); ?>
-          </footer>
         </section>
       </div>
     </div>
@@ -23,11 +19,12 @@
 <section class="wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-sm-10 offset-sm-1">
+      <div class="col-12 col-sm-4">
+        <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+      </div>
 
+      <div class="col-12 col-sm-8">
         <main class="article">
-          <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
-
           <h1>H1 tag</h1>
           <p>
             <? for($i=0; $i<=wp_rand(5, 20); $i++): ?>
@@ -41,25 +38,6 @@
               Lorem ipsum dot dot dot. Lorem ipsum dot dot dot.
             <?php endfor; ?>
           </p>
-
-          <h3>H3 tag</h3>
-          <p>
-            <? for($i=0; $i<=wp_rand(5, 20); $i++): ?>
-              Lorem ipsum dot dot dot. Lorem ipsum dot dot dot.
-            <?php endfor; ?>
-          </p>
-
-          <ul>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-          </ul>
-
-          <ol>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-          </ol>
 
           <p>
             <? for($i=0; $i<=wp_rand(5, 20); $i++): ?>

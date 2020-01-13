@@ -18,6 +18,12 @@
   <li>
     <a href="news-article.php">news article</a>
   </li>
+  <li>
+    <a href="sponsors.php">sponsors</a>
+  </li>
+  <li>
+    <a href="sponsor.php">sponsor</a>
+  </li>
 </ul>
 
 </body>
