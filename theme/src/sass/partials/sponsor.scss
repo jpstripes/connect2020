@@ -1,5 +1,4 @@
 .sponsor {
-
   @include mobile-tablet {
     margin-bottom: 60px;
     padding: 36px 24px;
@@ -11,9 +10,16 @@
   }
 
   &__header {
-    font-size: 34px;
     text-align: center;
     margin-bottom: 40px;
+
+    @include mobile-tablet {
+      font-size: 28px;
+    }
+
+    @include desktop {
+      font-size: 34px;
+    }
   }
 
   &__list {
@@ -21,11 +27,15 @@
     justify-content: center;
 
     &--platinum {
-      border: 6px solid #ddd;
+      @include desktop {
+        border: 6px solid #ddd;
+      }
     }
 
     &--gold {
-      border: 10px solid #fff;
+      @include desktop {
+        border: 10px solid #fff;
+      }
     }
 
     @include mobile-tablet {
@@ -48,10 +58,35 @@
 
     &-image {
       margin-bottom: 4px;
+
+      @include mobile-tablet {
+        max-height: 160px;
+      }
+
+      @include desktop {
+      }
     }
 
     &-name {
-      font-size: 24px;
+      @include mobile-tablet {
+        font-size: 20px;
+      }
+
+      @include desktop {
+        font-size: 24px;
+      }
+    }
+
+    &-message {
+      @include mobile-tablet {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+      }
+
+      @include desktop {
+        font-size: 18px;
+      }
     }
   }
 }

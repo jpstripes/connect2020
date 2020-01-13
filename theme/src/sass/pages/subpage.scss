@@ -1,11 +1,24 @@
 .subpage {
   &__hero {
-    padding: 80px 0 80px;
+    @include mobile-tablet {
+      padding: 60px;
+    }
+
+    @include desktop {
+      padding: 80px 0;
+    }
 
     &-title {
       color: #fff;
-      font-size: 46px;
       text-align: center;
+
+      @include mobile-tablet {
+        font-size: 28px;
+      }
+
+      @include desktop {
+        font-size: 46px;
+      }
     }
   }
 

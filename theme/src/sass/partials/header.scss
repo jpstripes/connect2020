@@ -2,7 +2,6 @@
   @include mobile-tablet {
     $_nav-margin: 130px;
 
-    height: 80vh;
     margin-top: -$_nav-margin;
     padding-top: $_nav-margin;
   }
@@ -17,10 +16,6 @@
   &--home {
     background: url('../../template/assets/images/home/hero.png') no-repeat
       center top;
-
-    @include mobile-tablet {
-      // background-size: contain;
-    }
 
     @include desktop {
       background-size: cover;

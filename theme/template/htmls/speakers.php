@@ -28,7 +28,7 @@
 
     <div class="row speaker__list">
       <?php for ($i = 0; $i < 4; $i++): ?>
-        <div class="col-12 col-sm-3">
+        <div class="col-6 col-sm-3">
           <a class="speaker__summary" href="speaker.php">
             <img class="speaker__summary-image img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
 
@@ -57,7 +57,7 @@
 
     <div class="row speaker__list">
       <?php for ($i = 0; $i < 30; $i++): ?>
-        <div class="col-12 col-sm-3">
+        <div class="col-6 col-sm-3">
           <a class="speaker__summary" href="speaker.php">
             <img class="speaker__summary-image img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
 
