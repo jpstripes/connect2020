@@ -23,7 +23,7 @@
         <?php for ($i=0; $i<=2; $i++): ?>
           <div class="row teaser">
             <div class="col-12 col-sm-2 teaser__aside">
-              <img class="img-full" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+              <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
 
               <div class="teaser__date">
                 2020/01/12

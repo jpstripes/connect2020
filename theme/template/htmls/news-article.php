@@ -26,7 +26,7 @@
       <div class="col-12 col-sm-10 offset-sm-1">
 
         <main class="article">
-          <img class="img-full" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+          <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
 
           <h1>H1 tag</h1>
           <p>
