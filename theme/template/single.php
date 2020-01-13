@@ -8,4 +8,3 @@ switch(get_post_type($post->ID)) {
 }
 
 get_footer();
-?>

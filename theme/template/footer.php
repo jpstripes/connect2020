@@ -1,5 +1,3 @@
-<?php wp_footer(); ?>
-
 <?php
 /**
  * Retrieve primary nav menus.
@@ -44,6 +42,7 @@ $footer_menus = get_pages([
   </div>
 </footer>
 
+<?php wp_footer(); ?>
 <script src="<?= get_template_directory_uri() ?>/dist/app.js"></script>
 </body>
 </html>

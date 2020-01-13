@@ -1,1 +1,1 @@
-Not implemented
+Sidebar not implemented

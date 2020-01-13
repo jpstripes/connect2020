@@ -2,6 +2,7 @@
 
 ## Next
 
+- Feature: Binded news template
 - Feature: Binded post template
 - Cleanup: Removed unused features
 - Feature: Created sub page and partials
