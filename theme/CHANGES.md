@@ -2,6 +2,8 @@
 
 ## Next
 
+## 0.6.0
+
 - Feature: Created timetable page
 - Feature: Created speakers page
 - Refactor: DRYed subpage headers
