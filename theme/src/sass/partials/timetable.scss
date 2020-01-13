@@ -1,0 +1,53 @@
+.timetable {
+  background: #fff;
+
+  @include mobile-tablet {
+    margin-bottom: 60px;
+    padding: 36px 24px;
+  }
+
+  @include desktop {
+    margin-bottom: 60px;
+    padding: 36px 24px;
+  }
+
+  &__lane {
+    width: 18%;
+    min-width: 100px;
+  }
+
+  &__cell {
+  }
+
+  &__title {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 12px;
+  }
+
+  &__speaker {
+    color: inherit;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      opacity: .8;
+    }
+
+    &-icon {
+      border-radius: 24px;
+      float: left;
+      margin-right: 4px;
+      width: 30px;
+    }
+
+    &-name {
+      color: inherit;
+      line-height: 12px;
+      margin-top: -3px;
+    }
+  }
+}

@@ -2,6 +2,7 @@
 
 ## Next
 
+- Feature: Created timetable page
 - Feature: Created speakers page
 - Refactor: DRYed subpage headers
 - Feature: Created sponsors page

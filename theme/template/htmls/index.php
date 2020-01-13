@@ -30,6 +30,9 @@
   <li>
     <a href="sponsor.php">sponsor</a>
   </li>
+  <li>
+    <a href="timetable.php">timetable</a>
+  </li>
 </ul>
 
 </body>
