@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.6.1
+
+- Bugfix: Mounted theme name should be names as last segment of GitHub URL (connect2020)
+
 ## 0.6.0
 
 - Feature: Created timetable page
