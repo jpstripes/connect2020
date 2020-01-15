@@ -5,6 +5,7 @@ define(
   json_decode(file_get_contents(dirname(__FILE__) . '/blocks.json'), true)
 );
 
+include_once dirname(__FILE__) . '/consts.php';
 include_once dirname(__FILE__) . '/admin.php';
 include_once dirname(__FILE__) . '/blocks.php';
 include_once dirname(__FILE__) . '/categories.php';
