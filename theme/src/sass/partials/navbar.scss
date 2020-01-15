@@ -23,6 +23,7 @@ $navbar-padding: 10px;
 // Overriding BS4 navbar.
 .navbar {
   background-color: transparent;
+  font-family: $heading-font;
   max-width: 1220px;
   margin: 0 auto;
   padding: $navbar-padding 0;

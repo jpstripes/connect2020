@@ -2,6 +2,7 @@
 
 ## Next
 
+- Feature: Setup Google Fonts
 - Feature: Created session page template
 - Feature: Created custom block to store speaker data to custom meta fields
 
