@@ -5,8 +5,12 @@ $speaker = get_speaker_metas($post->ID); ?>
     <div class="row">
       <div class="col-12">
         <section class="subpage__hero">
-          <h1 class="subpage__hero-title">
+          <div class="subpage__hero-pretitle">
             Sessions
+          </div>
+
+          <h1 class="subpage__hero-title">
+            <?= $post->post_title ?>
           </h1>
         </section>
       </div>
