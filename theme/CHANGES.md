@@ -2,6 +2,8 @@
 
 ## Next
 
+## 0.7.0
+
 - Feature: Binded Social Media URLs
 - Feature: Setup Google Fonts
 - Feature: Created session page template
