@@ -2,6 +2,11 @@
 
 ## Next
 
+## 0.7.1
+
+- Minor: Tweaked article font sizes
+- Bugfix: Title was not present in session page
+
 ## 0.7.0
 
 - Feature: Binded Social Media URLs
