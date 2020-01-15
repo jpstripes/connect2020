@@ -12,7 +12,7 @@ add_action('init', function () {
     // Registering post meta to `session` post type.
     // Using the block in the default post will not save any data
     // unless you explicitly call register_post_meta('post'..)
-    register_post_meta('session', $a, [
+    register_post_meta(SESSION_POST_TYPE, $a, [
       'show_in_rest' => true,
       'single' => true,
       'type' => 'string'
@@ -37,3 +37,20 @@ add_filter(
   1,
   2
 );
+
+/**
+ * Retrieve speaker metadata.
+ */
+function get_speaker_metas($id = null)
+{
+  $got = get_post_meta($id, null, true);
+
+  return (object) [
+    'name' => $got['name'][0],
+    'company' => $got['company'][0],
+    'profile' => $got['profile'][0],
+    'iconUrl' => $got['iconUrl'][0],
+    'twitter' => $got['twitter'][0],
+    'facebook' => $got['facebook'][0]
+  ];
+}

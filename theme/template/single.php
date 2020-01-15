@@ -2,6 +2,10 @@
 get_header();
 
 switch (get_post_type($post->ID)) {
+  case SESSION_POST_TYPE:
+    include_once get_template_directory() . '/posts/session.php';
+    break;
+
   // TODO: might cause high load when post grows.
   // Consider to refactor to get the post once, then match with the categories.
   case in_category(SPEAKER_SPONSORED, $post->ID):

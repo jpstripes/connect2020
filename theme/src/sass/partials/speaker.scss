@@ -69,4 +69,83 @@
       }
     }
   }
+
+  &__profile {
+    &-image {
+      background: #fff;
+      border: 6px solid #ececec;
+      display: block;
+      height: auto;
+      max-width: 100%;
+
+      @include mobile-tablet {
+      }
+
+      @include desktop {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    &-header {
+      @include mobile-tablet {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      @include desktop {
+        display: flex;
+        align-items: center;
+      }
+
+      &-icons {
+        align-self: flex-start;
+      }
+    }
+
+    &-name {
+      font-weight: bold;
+
+      @include mobile-tablet {
+        font-size: 28px;
+      }
+
+      @include desktop {
+        font-size: 32px;
+        margin-right: 28px;
+      }
+    }
+
+    &-company {
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    &-detail {
+      margin-bottom: 12px;
+    }
+
+    &-icon {
+      border-radius: 26px;
+      display: inline-block;
+      padding: 26px 19px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &--twitter {
+        background: url('../../template/assets/images/social/twitter.svg')
+          no-repeat top center;
+        background-position-y: 14px;
+        background-size: 32px;
+      }
+
+      &--facebook {
+        background: url('../../template/assets/images/social/facebook.svg')
+          no-repeat top center;
+        background-position-y: 14px;
+        background-size: 30px;
+      }
+    }
+  }
 }

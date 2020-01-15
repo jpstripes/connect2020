@@ -1,7 +1,7 @@
 <?php
 
 add_action('init', function () {
-  register_post_type('session', array(
+  register_post_type(SESSION_POST_TYPE, array(
     'labels' => array(
       'name' => 'Sessions',
       'singular_name' => 'Session'

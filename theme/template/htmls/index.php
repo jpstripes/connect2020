@@ -19,6 +19,12 @@
     <a href="news-article.php">news article</a>
   </li>
   <li>
+    <a href="sessions.php">sessions</a>
+  </li>
+  <li>
+    <a href="session.php">session</a>
+  </li>
+  <li>
     <a href="speakers.php">speakers</a>
   </li>
   <li>

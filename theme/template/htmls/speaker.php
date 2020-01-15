@@ -44,6 +44,8 @@
               Lorem ipsum dot dot dot. Lorem ipsum dot dot dot.
             <?php endfor; ?>
           </p>
+
+          <h2>Speaker</h2>
         </main>
       </div>
     </div>
