@@ -2,6 +2,8 @@
 
 ## Next
 
+- Feature: Created custom block to store speaker data to custom meta fields
+
 ## 0.6.2
 
 - Bugfix: Parcel output still was pointing jpstripes
