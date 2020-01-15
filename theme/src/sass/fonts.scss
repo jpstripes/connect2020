@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:400,700&display=swap&subset=japanese');
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $heading-font;
+  font-weight: bold;
+  letter-spacing: -1px;
+}

@@ -21,11 +21,11 @@
 
       <div class="col-12 col-sm-8">
         <main class="article">
-          <?= $post->post_content; ?>
+          <?= $post->post_content ?>
 
           <hr>
 
-          <a href="/<?= SPEAKERS_PAGE; ?>/">
+          <a href="/<?= SPEAKERS_PAGE ?>/">
             一覧に戻る
           </a>
         </main>

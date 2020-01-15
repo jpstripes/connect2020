@@ -1,4 +1,6 @@
 .header {
+  font-family: $heading-font;
+
   @include mobile-tablet {
     $_nav-margin: 130px;
 

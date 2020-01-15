@@ -1,0 +1,19 @@
+{
+  "setting": {
+    "category": "events",
+    "bundle": "bundles"
+  },
+  "events": {
+    "speaker": {
+      "name": "events/speaker",
+      "attributes": [
+        "name",
+        "company",
+        "profile",
+        "iconUrl",
+        "twitter",
+        "facebook"
+      ]
+    }
+  }
+}

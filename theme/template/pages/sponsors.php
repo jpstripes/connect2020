@@ -6,14 +6,16 @@
 $cats = [
   SPONSOR_PLATINUM => get_category_by_slug(SPONSOR_PLATINUM),
   SPONSOR_GOLD => get_category_by_slug(SPONSOR_GOLD),
-  SPONSOR_SILVER => get_category_by_slug(SPONSOR_SILVER),
+  SPONSOR_SILVER => get_category_by_slug(SPONSOR_SILVER)
 ];
 
 // Retrieve all posts.
 $posts = [
-  SPONSOR_PLATINUM => get_posts(['category' => $cats[SPONSOR_PLATINUM]->cat_ID]),
+  SPONSOR_PLATINUM => get_posts([
+    'category' => $cats[SPONSOR_PLATINUM]->cat_ID
+  ]),
   SPONSOR_GOLD => get_posts(['category' => $cats[SPONSOR_GOLD]->cat_ID]),
-  SPONSOR_SILVER => get_posts(['category' => $cats[SPONSOR_SILVER]->cat_ID]),
+  SPONSOR_SILVER => get_posts(['category' => $cats[SPONSOR_SILVER]->cat_ID])
 ];
 ?>
 <section class="wrapper">
@@ -27,17 +29,17 @@ $posts = [
     </div>
 
     <div class="row sponsor__list sponsor__list--platinum">
-      <?php foreach($posts[SPONSOR_PLATINUM] as $p): ?>
+      <?php foreach ($posts[SPONSOR_PLATINUM] as $p): ?>
         <div class="col-12 col-sm-3">
-          <a class="sponsor__summary" href="<?= get_permalink($p->ID); ?>">
+          <a class="sponsor__summary" href="<?= get_permalink($p->ID) ?>">
             <img class="sponsor__summary-image img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
 
             <p class="sponsor__summary-name">
-              <?= $p->post_title; ?>
+              <?= $p->post_title ?>
             </p>
 
             <p class="sponsor__summary-message">
-              <?= wp_strip_all_tags($p->post_content); ?>
+              <?= wp_strip_all_tags($p->post_content) ?>
             </p>
           </a>
         </div>
@@ -57,17 +59,17 @@ $posts = [
     <div class="row">
       <div class="col-12 col-sm-10 offset-sm-1">
         <div class="row sponsor__list sponsor__list--gold">
-          <?php foreach($posts[SPONSOR_PLATINUM] as $p): ?>
+          <?php foreach ($posts[SPONSOR_PLATINUM] as $p): ?>
             <div class="col-6 col-sm-3">
-              <a class="sponsor__summary" href="<?= get_permalink($p->ID); ?>">
+              <a class="sponsor__summary" href="<?= get_permalink($p->ID) ?>">
                 <img class="sponsor__summary-image img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
 
                 <p class="sponsor__summary-name">
-                  <?= $p->post_title; ?>
+                  <?= $p->post_title ?>
                 </p>
 
                 <p class="sponsor__summary-message">
-                  <?= wp_strip_all_tags($p->post_content); ?>
+                  <?= wp_strip_all_tags($p->post_content) ?>
                 </p>
               </a>
             </div>
@@ -89,9 +91,9 @@ $posts = [
     <div class="row">
       <div class="col-12 col-sm-10 offset-sm-1">
         <div class="row sponsor__list sponsor__list--gold">
-          <?php foreach($posts[SPONSOR_PLATINUM] as $p): ?>
+          <?php foreach ($posts[SPONSOR_PLATINUM] as $p): ?>
             <div class="col-4 col-sm-2">
-              <a class="sponsor__summary" href="<?= get_permalink($p->ID); ?>">
+              <a class="sponsor__summary" href="<?= get_permalink($p->ID) ?>">
                 <img class="sponsor__summary-image img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
               </a>
             </div>

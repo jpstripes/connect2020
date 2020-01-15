@@ -2,6 +2,13 @@
 
 ## Next
 
+## 0.7.0
+
+- Feature: Binded Social Media URLs
+- Feature: Setup Google Fonts
+- Feature: Created session page template
+- Feature: Created custom block to store speaker data to custom meta fields
+
 ## 0.6.2
 
 - Bugfix: Parcel output still was pointing jpstripes

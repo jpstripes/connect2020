@@ -1,9 +1,9 @@
-// Utils
-@import './utils/mediaquery';
-
 // Definitions
 $base-color: #3f3b3a;
+$heading-font: 'M PLUS 1p', sans-serif;
 
+@import './utils';
+@import './fonts';
 @import './partials/index';
 @import './pages/index';
 
@@ -12,7 +12,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 600px;
   color: $base-color;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 16px;
 
   @include mobile-tablet {

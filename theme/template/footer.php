@@ -8,7 +8,7 @@ $footer_menus = get_pages([
 ]); ?>
 
 <nav class="footer__social">
-  <?php include(get_template_directory().'/_includes/social.php'); ?>
+  <?php include get_template_directory() . '/_includes/social.php'; ?>
 </nav>
 
 <footer class="footer">
