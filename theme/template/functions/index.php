@@ -11,3 +11,4 @@ include_once dirname(__FILE__) . '/blocks.php';
 include_once dirname(__FILE__) . '/categories.php';
 include_once dirname(__FILE__) . '/features.php';
 include_once dirname(__FILE__) . '/post-session.php';
+include_once dirname(__FILE__) . '/social.php';
