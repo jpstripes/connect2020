@@ -76,6 +76,8 @@ $navbar-padding: 10px;
     $padding-y: 8px;
 
     color: #fff !important;
+    // MacOS Safari needs this to retain texts vertically, on webfonts.
+    display: inline;
     font-size: 16px;
     padding: $padding-y $padding-x !important;
     margin: 0 4px;

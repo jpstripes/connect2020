@@ -2,6 +2,8 @@
 
 ## Next
 
+- Bugfix: Navbar item layout was breaking on Safari
+
 ## 0.7.1
 
 - Minor: Tweaked article font sizes
