@@ -8,6 +8,20 @@
       padding: 80px 0;
     }
 
+    &-pretitle {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 14px;
+
+      @include mobile-tablet {
+        font-size: 18px;
+      }
+
+      @include desktop {
+        font-size: 24px;
+      }
+    }
+
     &-title {
       color: #fff;
       text-align: center;
