@@ -10,5 +10,9 @@
     "prettier": "^1.19.1",
     "sass": "^1.24.4",
     "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "@wordpress/blocks": "^6.10.0",
+    "@wordpress/components": "^9.0.0"
   }
 }

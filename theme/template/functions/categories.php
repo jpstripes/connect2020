@@ -46,7 +46,7 @@ function setup_categories()
     (object) [
       'slug' => SPONSOR_SILVER,
       'title' => 'Sponsors (Silver)'
-    ],
+    ]
   ];
 
   foreach ($categories as $c) {

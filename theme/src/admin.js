@@ -1,5 +1,5 @@
 /**
  * Parcel entrypoint.
  */
-import './typescript/app/index.ts';
+import './typescript/admin/blocks/index.ts';
 import './sass/index';
