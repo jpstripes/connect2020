@@ -21,7 +21,7 @@ add_action('init', function () {
         ]
       ],
       ['core/paragraph'],
-      ['events/speaker']
+      [BLOCKS['events']['speaker']['name']]
     ]
   ));
 });
