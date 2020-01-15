@@ -6,7 +6,14 @@
   "events": {
     "speaker": {
       "name": "events/speaker",
-      "attributes": ["company", "profile", "iconUrl", "twitter", "facebook"]
+      "attributes": [
+        "name",
+        "company",
+        "profile",
+        "iconUrl",
+        "twitter",
+        "facebook"
+      ]
     }
   }
 }

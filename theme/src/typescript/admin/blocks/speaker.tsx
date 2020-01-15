@@ -17,6 +17,11 @@ const register = () => {
     },
 
     attributes: {
+      name: {
+        type: 'string',
+        source: 'meta',
+        meta: 'name',
+      },
       company: {
         type: 'string',
         source: 'meta',
@@ -48,6 +53,12 @@ const register = () => {
       return (
         <>
           <h3>Speaker</h3>
+
+          <wp.components.TextControl
+            label="Name"
+            value={props.attributes.name}
+            onChange={val => props.setAttributes({ name: event.target.value })}
+          />
 
           <wp.components.TextControl
             label="Company"

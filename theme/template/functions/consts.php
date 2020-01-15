@@ -14,3 +14,8 @@ define('SPONSOR_SILVER', 'silver-sponsors');
  */
 define('SPEAKERS_PAGE', 'speakers');
 define('SPONSORS_PAGE', 'sponsors');
+
+/**
+ * Custom post types.
+ */
+define('SESSION_POST_TYPE', 'session');
