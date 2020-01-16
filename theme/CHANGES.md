@@ -2,6 +2,8 @@
 
 ## Next
 
+## 0.10.0
+
 - Feature: Added Shifter logo in footer
 - Refactor: Load header and footer on each pages
 
