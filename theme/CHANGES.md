@@ -2,6 +2,7 @@
 
 ## Next
 
+- Feature: Added image directory symlink to avoid referencing top-level theme
 - Feature: Enabled featured image for default and session posts
 - Bugfix: Navbar item layout was breaking on Safari
 
