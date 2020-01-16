@@ -59,7 +59,7 @@ $(document).ready(function() {
   // Apply effect on current page.
   (function() {
     var link = '.nav-link';
-    var path = window.location.pathname;
+    var path = window.location.href;
 
     $(link).each(function(_, el) {
       $target = $(el);

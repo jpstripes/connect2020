@@ -8,13 +8,23 @@ $speaker = get_speaker_metas($post->ID); ?>
     <div class="row">
       <div class="col-12">
         <section class="subpage__hero">
-          <div class="subpage__hero-pretitle">
-            Sessions
-          </div>
-
           <h1 class="subpage__hero-title">
             <?= $post->post_title ?>
           </h1>
+
+          <nav class="subpage__hero-share">
+            <a class="btn btn-small btn-outline-light" href="<?= tweet_url(
+              $post
+            ) ?>" target="_blank">
+              ツイート
+            </a>
+
+            <a class="btn btn-small btn-outline-light" href="<?= facebook_url(
+              $post
+            ) ?>" target="_blank">
+              Facebookに投稿
+            </a>
+          </nav>
         </section>
       </div>
     </div>
@@ -54,7 +64,6 @@ $speaker = get_speaker_metas($post->ID); ?>
                   <div class="p-org speaker__profile-company">
                     <?= $speaker->company ?>
                   </div>
-                   
                 </div>
 
                 <div class="speaker__profile-header-icons">

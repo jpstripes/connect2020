@@ -44,6 +44,12 @@
     & td {
       padding: 20px;
 
+      // WP injects <br> tag, and makes the cell look weirdly spaced.
+      // Simply nullifying with display none.
+      & br {
+        display: none;
+      }
+
       &.unused {
         background: #cecece;
       }

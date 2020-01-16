@@ -2,6 +2,14 @@
 
 ## Next
 
+## 0.11.0
+
+- Feature: Installed Google Tag Manager
+- Feature: Added Open Graph image
+- Feature: Resolved post thumbnails
+- Bugfix: Navbar item margin was broken on mobile
+- Feature: Use absolute path for asset serving url
+
 ## 0.10.0
 
 - Feature: Added Shifter logo in footer
