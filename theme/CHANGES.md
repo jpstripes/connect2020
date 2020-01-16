@@ -2,6 +2,7 @@
 
 ## Next
 
+- Feature: Installed Google Tag Manager
 - Feature: Added Open Graph image
 - Feature: Resolved post thumbnails
 - Bugfix: Navbar item margin was broken on mobile
