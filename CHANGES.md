@@ -8,6 +8,8 @@
 
 ## Next
 
+- Refactor: Rolled back theme binding from connect2020 to theme
+
 ## 0.6.1
 
 - Bugfix: Mounted theme name should be names as last segment of GitHub URL (connect2020)

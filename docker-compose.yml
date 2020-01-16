@@ -6,7 +6,7 @@ services:
     container_name: jpstripes_wordpress
     privileged: true
     volumes:
-      - ./theme/template:/var/www/html/wp-content/themes/connect2020
+      - ./theme/template:/var/www/html/wp-content/themes/theme
     depends_on:
       - mysql
     environment:
