@@ -2,6 +2,7 @@
 
 ## Next
 
+- Feature: Added Open Graph image
 - Feature: Resolved post thumbnails
 - Bugfix: Navbar item margin was broken on mobile
 - Feature: Use absolute path for asset serving url
