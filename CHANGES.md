@@ -8,6 +8,8 @@
 
 ## Next
 
+## 0.11.0
+
 - Refactor: Rolled back theme binding from connect2020 to theme
 
 ## 0.6.1
