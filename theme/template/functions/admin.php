@@ -4,6 +4,9 @@
  */
 add_action('admin_init', function () {
   remove_menu_page('edit-comments.php');
+
+  // Disable Theme Editor to make the deployment idempotent.
+  remove_submenu_page('themes.php', 'theme-editor.php');
 });
 
 /**

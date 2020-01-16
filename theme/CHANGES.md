@@ -2,6 +2,11 @@
 
 ## Next
 
+## 0.12.0
+
+- Feature: Disabled Theme Editor
+- Bugfix: Sponsor query was all pointing to Platinum
+
 ## 0.11.0
 
 - Feature: Installed Google Tag Manager
