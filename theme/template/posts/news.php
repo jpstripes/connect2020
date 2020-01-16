@@ -23,6 +23,11 @@
     <div class="row">
       <div class="col-12 col-sm-10 offset-sm-1">
         <main class="article">
+          <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>
+          <?php if ($thumbnail): ?>
+            <img class="img-fluid" src="<?= $thumbnail ?>">
+          <?php endif; ?>
+
           <?= $post->post_content ?>
         </main>
       </div>

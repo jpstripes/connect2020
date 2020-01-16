@@ -18,7 +18,14 @@ $posts = get_posts([
         <?php foreach ($posts as $p): ?>
           <div class="row teaser">
             <div class="col-12 col-sm-2 teaser__aside">
-              <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+              <a href="<?= get_permalink($p->ID) ?>">
+                <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>
+                <?php if ($thumbnail): ?>
+                  <img class="img-fluid" src="<?= $thumbnail ?>">
+                <?php else: ?>
+                  <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+                <?php endif; ?>
+              </a>
 
               <div class="teaser__date">
                 <?= mb_substr(wp_date($p->post_date), 0, 10) ?>
@@ -31,7 +38,7 @@ $posts = get_posts([
               </h2>
 
               <p class="teaser__summary">
-                <?= wp_strip_all_tags($p->post_content) ?>
+                <?= wp_strip_all_tags(get_the_excerpt($p->ID)) ?>
               </p>
 
               <a class="btn btn-primary" href="<?= get_permalink($p->ID) ?>">

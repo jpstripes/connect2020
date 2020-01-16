@@ -32,14 +32,15 @@ $posts = [
       <?php foreach ($posts[SPONSOR_PLATINUM] as $p): ?>
         <div class="col-12 col-sm-3">
           <a class="sponsor__summary" href="<?= get_permalink($p->ID) ?>">
-            <img class="sponsor__summary-image img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+            <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>
+            <?php if ($thumbnail): ?>
+              <img class="sponsor__summary-image img-fluid" src="<?= $thumbnail ?>">
+            <?php else: ?>
+              <img class="sponsor__summary-image img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+            <?php endif; ?>
 
             <p class="sponsor__summary-name">
               <?= $p->post_title ?>
-            </p>
-
-            <p class="sponsor__summary-message">
-              <?= wp_strip_all_tags($p->post_content) ?>
             </p>
           </a>
         </div>
@@ -62,14 +63,15 @@ $posts = [
           <?php foreach ($posts[SPONSOR_PLATINUM] as $p): ?>
             <div class="col-6 col-sm-3">
               <a class="sponsor__summary" href="<?= get_permalink($p->ID) ?>">
-                <img class="sponsor__summary-image img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+                <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>
+                <?php if ($thumbnail): ?>
+                  <img class="sponsor__summary-image img-fluid" src="<?= $thumbnail ?>">
+                <?php else: ?>
+                  <img class="sponsor__summary-image img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+                <?php endif; ?>
 
                 <p class="sponsor__summary-name">
                   <?= $p->post_title ?>
-                </p>
-
-                <p class="sponsor__summary-message">
-                  <?= wp_strip_all_tags($p->post_content) ?>
                 </p>
               </a>
             </div>
@@ -94,7 +96,12 @@ $posts = [
           <?php foreach ($posts[SPONSOR_PLATINUM] as $p): ?>
             <div class="col-4 col-sm-2">
               <a class="sponsor__summary" href="<?= get_permalink($p->ID) ?>">
-                <img class="sponsor__summary-image img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+                <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>
+                <?php if ($thumbnail): ?>
+                  <img class="sponsor__summary-image img-fluid" src="<?= $thumbnail ?>">
+                <?php else: ?>
+                  <img class="sponsor__summary-image img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+                <?php endif; ?>
               </a>
             </div>
           <?php endforeach; ?>

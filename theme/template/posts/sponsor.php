@@ -6,7 +6,7 @@
       <div class="col-12">
         <section class="subpage__hero">
           <h1 class="subpage__hero-title">
-            Sponsors
+            スポンサー
           </h1>
         </section>
       </div>
@@ -18,7 +18,12 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-4">
-        <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+        <?php $thumbnail = get_the_post_thumbnail_url($post->ID); ?>
+        <?php if ($thumbnail): ?>
+          <img class="img-fluid" src="<?= $thumbnail ?>">
+        <?php else: ?>
+          <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+        <?php endif; ?>
       </div>
 
       <div class="col-12 col-sm-8">

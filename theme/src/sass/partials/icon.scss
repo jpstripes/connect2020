@@ -12,6 +12,10 @@
       top center;
     background-position-y: 14px;
     background-size: 50px;
+
+    &-small {
+      background-size: 40px;
+    }
   }
 
   &--facebook {
@@ -19,5 +23,9 @@
       no-repeat top center;
     background-position-y: 14px;
     background-size: 50px;
+
+    &-small {
+      background-size: 40px;
+    }
   }
 }
