@@ -3,7 +3,16 @@
   padding: 40px 0 30px;
 
   &__logo {
-    width: 180px;
+    display: block;
+    margin: 0 auto;
+
+    @include mobile-tablet {
+      max-width: 100%;
+    }
+
+    @include desktop {
+      width: 140px;
+    }
   }
 
   &__social {
@@ -47,10 +56,18 @@
   &__copyright {
     color: #fff;
     display: block;
-    font-size: 14px;
     font-style: normal;
     padding-top: 20px;
+    text-align: center;
     text-decoration: none;
     opacity: 0.8;
+
+    @include mobile-tablet {
+      font-size: 10px;
+    }
+
+    @include desktop {
+      font-size: 13px;
+    }
   }
 }

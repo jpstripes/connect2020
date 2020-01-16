@@ -28,19 +28,26 @@ $footer_menus = get_pages([
     </div>
 
     <div class="row">
-      <div class="col-12 text-center">
-        <a href="#">
+      <div class="col-4 col-sm-2 offset-2 offset-sm-4">
+        <a href="https://www.getshifter.io/" target="_blank">
+          <img class="footer__logo" src="<?= get_template_directory_uri() ?>/assets/images/sponsors/shifter.png" alt="Shifter Logo">
+        </a>
+      </div>
+
+      <div class="col-4 col-sm-2">
+        <a href="/">
           <img class="footer__logo" src="<?= get_template_directory_uri() ?>/assets/images/logo.svg" alt="JP_Stripes Logo">
         </a>
+      </div>
+
+      <div class="col-12">
+        <cite class="footer__copyright">
+          © JP_Stripes User Group. All Rights Reserved.
+        </cite>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-12 text-center">
-        <cite class="footer__copyright">
-          All Rights Reserved.
-        </cite>
-      </div>
     </div>
   </div>
 </footer>
