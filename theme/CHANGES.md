@@ -2,6 +2,7 @@
 
 ## Next
 
+- Feature: Enabled featured image for default and session posts
 - Bugfix: Navbar item layout was breaking on Safari
 
 ## 0.7.1
