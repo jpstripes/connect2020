@@ -17,6 +17,10 @@ switch ($post->post_name) {
     get_footer();
     break;
 
+  case TIMETABLE_PAGE:
+    include_once get_template_directory() . '/pages/timetable.php';
+    break;
+
   default:
     include_once get_template_directory() . '/pages/default.php';
     get_footer();

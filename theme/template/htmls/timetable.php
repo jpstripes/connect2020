@@ -19,30 +19,30 @@
 <section class="wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-sm-12">
-      </div>
-    </div>
+      <div class="col-12">
+        <main class="article">
+          <?php // Managed via WP page ?>
+          <p>
+            Whatever description comes here.
+          </p>
 
-    <div class="row">
-      <div class="col-12 col-sm-12">
-        <section class="timetable">
-          <table class="table">
+          <table class="table timetable">
             <thead>
               <tr>
                 <th></th>
-                <th class="timetable__lane">A</th>
-                <th class="timetable__lane">B</th>
-                <th class="timetable__lane">C</th>
-                <th class="timetable__lane">D</th>
-                <th class="timetable__lane">E</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
               </tr>
             </thead>
 
             <tbody>
               <tr>
                 <td>10:00</td>
-                <td class="timetable__cell">
-                  <a class="timetable__title" href="#">
+                <td>
+                  <a href="#">
                     Some cool presentations that is kind of awesome.
                   </a>
 
@@ -62,8 +62,8 @@
 
               <tr>
                 <td>11:00</td>
-                <td class="timetable__cell">
-                  <a class="timetable__title" href="#">
+                <td>
+                  <a href="#">
                     Some cool presentations that is kind of awesome.
                   </a>
 
@@ -82,7 +82,7 @@
               </tr>
             </tbody>
           </table>
-        </section>
+        </main>
       </div>
     </div>
   </div>

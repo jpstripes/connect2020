@@ -14,6 +14,7 @@ define('SPONSOR_SILVER', 'silver-sponsors');
  */
 define('SPEAKERS_PAGE', 'speakers');
 define('SPONSORS_PAGE', 'sponsors');
+define('TIMETABLE_PAGE', 'timetable');
 
 /**
  * Custom post types.

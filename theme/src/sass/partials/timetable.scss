@@ -1,24 +1,60 @@
+/**
+ * Timetable class is intended to use for wp-block-table block.
+ * WP will generate the following html structure, and you should set
+ * `timetable` class manually in WP editor.
+ *
+ * <!-- wp:table -->
+ * <figure class="wp-block-table timetable table-responsive">
+ *   <table />
+ * </figure>
+ * <!-- /wp:table -->
+ */
 .timetable {
   background: #fff;
+  max-width: 100%;
+  overflow-x: scroll;
 
   @include mobile-tablet {
     margin-bottom: 60px;
-    padding: 36px 24px;
+    padding: 36px 0;
   }
 
   @include desktop {
     margin-bottom: 60px;
-    padding: 36px 24px;
+    padding: 36px 0;
   }
 
-  &__lane {
-    width: 18%;
-    min-width: 100px;
+  // Setting fixed width only to the first element of table header,
+  // which represents timetable hours.
+  & table thead {
+    & th:first-child {
+      width: 100px;
+    }
+
+    & th {
+      border-bottom: 2px solid #ccc;
+      min-width: 100px;
+      padding: 20px;
+      text-align: center;
+      width: 18%;
+    }
   }
 
-  &__cell {
+  & table tbody {
+    & td {
+      padding: 20px;
+
+      &.unused {
+        background: #cecece;
+      }
+    }
+
+    & tr {
+      border-bottom: 1px solid #ccc;
+    }
   }
 
+  & a,
   &__title {
     display: block;
     font-size: 18px;
