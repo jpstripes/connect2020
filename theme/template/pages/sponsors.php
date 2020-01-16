@@ -60,7 +60,7 @@ $posts = [
     <div class="row">
       <div class="col-12 col-sm-10 offset-sm-1">
         <div class="row sponsor__list sponsor__list--gold">
-          <?php foreach ($posts[SPONSOR_PLATINUM] as $p): ?>
+          <?php foreach ($posts[SPONSOR_GOLD] as $p): ?>
             <div class="col-6 col-sm-3">
               <a class="sponsor__summary" href="<?= get_permalink($p->ID) ?>">
                 <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>
@@ -93,7 +93,7 @@ $posts = [
     <div class="row">
       <div class="col-12 col-sm-10 offset-sm-1">
         <div class="row sponsor__list sponsor__list--gold">
-          <?php foreach ($posts[SPONSOR_PLATINUM] as $p): ?>
+          <?php foreach ($posts[SPONSOR_SILVER] as $p): ?>
             <div class="col-4 col-sm-2">
               <a class="sponsor__summary" href="<?= get_permalink($p->ID) ?>">
                 <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>

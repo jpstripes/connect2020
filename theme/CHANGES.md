@@ -2,6 +2,8 @@
 
 ## Next
 
+- Bugfix: Sponsor query was all pointing to Platinum
+
 ## 0.11.0
 
 - Feature: Installed Google Tag Manager
