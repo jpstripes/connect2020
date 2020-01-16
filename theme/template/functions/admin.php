@@ -7,6 +7,11 @@ add_action('admin_init', function () {
 });
 
 /**
+ * Enable featured image metabox.
+ */
+add_theme_support('post-thumbnails', ['page', 'post']);
+
+/**
  * Register custom script on admin.
  */
 add_action('init', function () {

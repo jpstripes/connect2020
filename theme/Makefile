@@ -4,7 +4,7 @@ BIN := ./node_modules/.bin
 BUILD := ./build
 
 PARCEL_TARGETS := src/app.js src/admin.js
-PARCEL_OPTS := --out-dir template/dist --public-url /wp-content/themes/connect2020/dist
+PARCEL_OPTS    := --out-dir template/dist --public-url ./
 
 clean:
 	rm -Rf $(BUILD)
