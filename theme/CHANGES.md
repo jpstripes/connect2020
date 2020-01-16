@@ -2,6 +2,8 @@
 
 ## Next
 
+- Feature: Created timetable style and page
+
 ## 0.8.0
 
 - Feature: Added image directory symlink to avoid referencing top-level theme
