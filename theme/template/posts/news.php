@@ -1,3 +1,23 @@
+<?php get_header(); ?>
+
+<header class="header header--subpage">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <section class="subpage__hero">
+          <div class="subpage__hero-pretitle">
+            News
+          </div>
+
+          <h1 class="subpage__hero-title">
+            <?= $post->post_title ?>
+          </h1>
+        </section>
+      </div>
+    </div>
+  </div>
+</header>
+
 <section class="wrapper">
   <div class="container">
     <div class="row">
@@ -9,3 +29,5 @@
     </div>
   </div>
 </section>
+
+<?php get_footer(); ?>

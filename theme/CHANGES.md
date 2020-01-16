@@ -2,6 +2,8 @@
 
 ## Next
 
+- Refactor: Load header and footer on each pages
+
 ## 0.9.0
 
 - Feature: Created timetable style and page

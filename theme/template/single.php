@@ -1,6 +1,4 @@
 <?php
-get_header();
-
 switch (get_post_type($post->ID)) {
   case SESSION_POST_TYPE:
     include_once get_template_directory() . '/posts/session.php';
@@ -22,7 +20,6 @@ switch (get_post_type($post->ID)) {
     break;
 
   case in_category(NEWS_CATEGORY, $post->ID):
-    include_once get_template_directory() . '/_includes/subpage-header.php';
     include_once get_template_directory() . '/posts/news.php';
     break;
 
@@ -31,5 +28,3 @@ switch (get_post_type($post->ID)) {
     include_once get_template_directory() . '/posts/default.php';
     break;
 }
-
-get_footer();
