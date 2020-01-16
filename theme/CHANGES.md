@@ -2,6 +2,8 @@
 
 ## Next
 
+## 0.11.0
+
 - Feature: Installed Google Tag Manager
 - Feature: Added Open Graph image
 - Feature: Resolved post thumbnails
