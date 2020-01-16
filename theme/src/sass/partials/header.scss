@@ -16,7 +16,7 @@
   }
 
   &--home {
-    background: url('../images/home/hero.png') no-repeat
+    background: url(../images/home/hero.png) no-repeat
       center top;
 
     @include desktop {
@@ -25,7 +25,7 @@
   }
 
   &--subpage {
-    background: url('../images/home/hero.png') no-repeat
+    background: url(../images/home/hero.png) no-repeat
       center top;
 
     @include mobile-tablet {

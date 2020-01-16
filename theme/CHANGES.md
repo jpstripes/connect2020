@@ -2,6 +2,8 @@
 
 ## Next
 
+- Feature: Use absolute path for asset serving url
+
 ## 0.10.0
 
 - Feature: Added Shifter logo in footer
