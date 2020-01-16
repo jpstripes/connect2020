@@ -1,5 +1,8 @@
 <?php
 $speaker = get_speaker_metas($post->ID); ?>
+
+<?php get_header(); ?>
+
 <header class="header header--subpage">
   <div class="container">
     <div class="row">
@@ -81,3 +84,5 @@ $speaker = get_speaker_metas($post->ID); ?>
     </div>
   </div>
 </section>
+
+<?php get_footer(); ?>

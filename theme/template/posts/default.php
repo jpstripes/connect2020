@@ -1,3 +1,5 @@
+<?php get_header(); ?>
+
 <section class="wrapper">
   <div class="container">
     <div class="row">
@@ -9,3 +11,5 @@
     </div>
   </div>
 </section>
+
+<?php get_footer(); ?>
