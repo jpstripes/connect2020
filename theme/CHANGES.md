@@ -2,6 +2,8 @@
 
 ## Next
 
+## 0.9.0
+
 - Feature: Created timetable style and page
 
 ## 0.8.0
