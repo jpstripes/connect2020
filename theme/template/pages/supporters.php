@@ -3,21 +3,28 @@
  * List of Supporters
  */
 
-$cats = [
-  SUPPORTER_PLATINUM => get_category_by_slug(SUPPORTER_PLATINUM),
-  SUPPORTER_GOLD => get_category_by_slug(SUPPORTER_GOLD),
-  SUPPORTER_SILVER => get_category_by_slug(SUPPORTER_SILVER),
-  SUPPORTER_OPERATION => get_category_by_slug(SUPPORTER_OPERATION)
-];
-
 // Retrieve all posts.
 $posts = [
-  SUPPORTER_PLATINUM => get_posts([
-    'category' => $cats[SUPPORTER_PLATINUM]->cat_ID
+  SUPPORTER_PLATINUM_POST_TYPE => get_posts([
+    'post_type' => SUPPORTER_PLATINUM_POST_TYPE,
+    'post_status' => 'publish',
+    'numberposts' => -1
   ]),
-  SUPPORTER_GOLD => get_posts(['category' => $cats[SUPPORTER_GOLD]->cat_ID]),
-  SUPPORTER_SILVER => get_posts(['category' => $cats[SUPPORTER_SILVER]->cat_ID]),
-  SUPPORTER_OPERATION => get_posts(['category' => $cats[SUPPORTER_OPERATION]->cat_ID])
+  SUPPORTER_GOLD_POST_TYPE => get_posts([
+    'post_type' => SUPPORTER_GOLD_POST_TYPE,
+    'post_status' => 'publish',
+    'numberposts' => -1
+  ]),
+  SUPPORTER_SILVER_POST_TYPE => get_posts([
+    'post_type' => SUPPORTER_SILVER_POST_TYPE,
+    'post_status' => 'publish',
+    'numberposts' => -1
+  ]),
+  SUPPORTER_OPERATION_POST_TYPE => get_posts([
+    'post_type' => SUPPORTER_OPERATION_POST_TYPE,
+    'post_status' => 'publish',
+    'numberposts' => -1
+  ])
 ];
 ?>
 <section class="wrapper">
@@ -31,7 +38,7 @@ $posts = [
     </div>
 
     <div class="row supporter__list supporter__list--platinum">
-      <?php foreach ($posts[SUPPORTER_PLATINUM] as $p): ?>
+      <?php foreach ($posts[SUPPORTER_PLATINUM_POST_TYPE] as $p): ?>
         <div class="col-12 col-sm-3">
           <a class="supporter__summary" href="<?= get_permalink($p->ID) ?>">
             <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>
@@ -62,7 +69,7 @@ $posts = [
     <div class="row">
       <div class="col-12 col-sm-10 offset-sm-1">
         <div class="row supporter__list supporter__list--gold">
-          <?php foreach ($posts[SUPPORTER_GOLD] as $p): ?>
+          <?php foreach ($posts[SUPPORTER_GOLD_POST_TYPE] as $p): ?>
             <div class="col-6 col-sm-3">
               <a class="supporter__summary" href="<?= get_permalink($p->ID) ?>">
                 <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>
@@ -95,7 +102,7 @@ $posts = [
     <div class="row">
       <div class="col-12 col-sm-10 offset-sm-1">
         <div class="row supporter__list supporter__list--gold">
-          <?php foreach ($posts[SUPPORTER_OPERATION] as $p): ?>
+          <?php foreach ($posts[SUPPORTER_OPERATION_POST_TYPE] as $p): ?>
             <div class="col-6 col-sm-3">
               <a class="supporter__summary" href="<?= get_permalink($p->ID) ?>">
                 <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>
@@ -128,7 +135,7 @@ $posts = [
     <div class="row">
       <div class="col-12 col-sm-10 offset-sm-1">
         <div class="row supporter__list supporter__list--gold">
-          <?php foreach ($posts[SUPPORTER_SILVER] as $p): ?>
+          <?php foreach ($posts[SUPPORTER_SILVER_POST_TYPE] as $p): ?>
             <div class="col-4 col-sm-2">
               <a class="supporter__summary" href="<?= get_permalink($p->ID) ?>">
                 <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>

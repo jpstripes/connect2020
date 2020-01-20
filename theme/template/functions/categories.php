@@ -11,22 +11,6 @@ function setup_categories()
       'slug' => NEWS_CATEGORY,
       'title' => 'News'
     ],
-    (object) [
-      'slug' => SUPPORTER_PLATINUM,
-      'title' => 'Supporters (Platinum)'
-    ],
-    (object) [
-      'slug' => SUPPORTER_GOLD,
-      'title' => 'Supporters (Gold)'
-    ],
-    (object) [
-      'slug' => SUPPORTER_SILVER,
-      'title' => 'Supporters (Silver)'
-    ],
-    (object) [
-      'slug' => SUPPORTER_OPERATION,
-      'title' => 'Supporters (Operation)'
-    ]
   ];
 
   foreach ($categories as $c) {

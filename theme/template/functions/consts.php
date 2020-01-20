@@ -18,3 +18,7 @@ define('TIMETABLE_PAGE', 'timetable');
  * Custom post types.
  */
 define('SESSION_POST_TYPE', 'session');
+define('SUPPORTER_PLATINUM_POST_TYPE', 'platinum-supporter');
+define('SUPPORTER_GOLD_POST_TYPE', 'gold-supporter');
+define('SUPPORTER_SILVER_POST_TYPE', 'silver-supporter');
+define('SUPPORTER_OPERATION_POST_TYPE', 'operation-supporter');

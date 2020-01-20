@@ -4,12 +4,10 @@ switch (get_post_type($post->ID)) {
     include_once get_template_directory() . '/posts/session.php';
     break;
 
-  // TODO: might cause high load when post grows.
-  // Consider to refactor to get the post once, then match with the categories.
-  case in_category(SUPPORTER_PLATINUM, $post->ID):
-  case in_category(SUPPORTER_GOLD, $post->ID):
-  case in_category(SUPPORTER_SILVER, $post->ID):
-  case in_category(SUPPORTER_OPERATION, $post->ID):
+  case SUPPORTER_PLATINUM_POST_TYPE:
+  case SUPPORTER_GOLD_POST_TYPE:
+  case SUPPORTER_SILVER_POST_TYPE:
+  case SUPPORTER_OPERATION_POST_TYPE:
     include_once get_template_directory() . '/posts/supporter.php';
     break;
 

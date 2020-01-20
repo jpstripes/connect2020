@@ -30,7 +30,7 @@ $footer_menus = get_pages([
     <div class="row">
       <div class="col-4 col-sm-2 offset-2 offset-sm-4">
         <a href="https://www.getshifter.io/" target="_blank">
-          <img class="footer__logo" src="<?= get_template_directory_uri() ?>/assets/images/sponsors/shifter.png" alt="Shifter Logo">
+          <img class="footer__logo" src="<?= get_template_directory_uri() ?>/assets/images/supporters/shifter.png" alt="Shifter Logo">
         </a>
       </div>
 
