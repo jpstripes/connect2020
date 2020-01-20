@@ -30,6 +30,10 @@ function setup_categories()
     (object) [
       'slug' => SPONSOR_SILVER,
       'title' => 'Sponsors (Silver)'
+    ],
+    (object) [
+      'slug' => SPONSOR_OPERATION,
+      'title' => 'Sponsors (Operation)'
     ]
   ];
 

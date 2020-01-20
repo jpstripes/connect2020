@@ -8,6 +8,7 @@ define('SPEAKER_COMMUNITY', 'community-speakers');
 define('SPONSOR_PLATINUM', 'platinum-sponsors');
 define('SPONSOR_GOLD', 'gold-sponsors');
 define('SPONSOR_SILVER', 'silver-sponsors');
+define('SPONSOR_OPERATION', 'operation-sponsors');
 
 /**
  * Page names.

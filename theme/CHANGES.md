@@ -2,6 +2,8 @@
 
 ## Next
 
+- Feature: Added Operation Sponsors section
+
 ## 0.12.1
 
 - Bugfix: Button text was breaking on Safari
