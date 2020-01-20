@@ -12,13 +12,7 @@ add_action('init', function () {
     'capability_type' => 'post',
     'menu_position' => 3,
     'show_in_rest' => true,
-    'supports' => [
-      'title',
-      'editor',
-      'custom-fields',
-      'thumbnail',
-      'excerpt',
-    ],
+    'supports' => ['title', 'editor', 'custom-fields', 'thumbnail', 'excerpt'],
     'template' => [
       [
         'core/heading',

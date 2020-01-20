@@ -10,7 +10,7 @@ function setup_categories()
     (object) [
       'slug' => NEWS_CATEGORY,
       'title' => 'News'
-    ],
+    ]
   ];
 
   foreach ($categories as $c) {

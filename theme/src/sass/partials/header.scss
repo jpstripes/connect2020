@@ -16,8 +16,7 @@
   }
 
   &--home {
-    background: url(../images/home/hero.png) no-repeat
-      center top;
+    background: url(../images/home/hero.png) no-repeat center top;
 
     @include desktop {
       background-size: cover;
@@ -25,8 +24,7 @@
   }
 
   &--subpage {
-    background: url(../images/home/hero.png) no-repeat
-      center top;
+    background: url(../images/home/hero.png) no-repeat center top;
 
     @include mobile-tablet {
       // background-size: contain;

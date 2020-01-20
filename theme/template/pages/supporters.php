@@ -25,8 +25,7 @@ $posts = [
     'post_status' => 'publish',
     'numberposts' => -1
   ])
-];
-?>
+]; ?>
 <section class="wrapper">
   <div class="container">
     <div class="row">
