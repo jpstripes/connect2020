@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.13.1
+
+- Bugfix: Operation Sponsor was not included in post
+
 ## 0.13.0
 
 - Cleanup: Removed speakers category and dependencies

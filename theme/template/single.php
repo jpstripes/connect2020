@@ -9,6 +9,7 @@ switch (get_post_type($post->ID)) {
   case in_category(SPONSOR_PLATINUM, $post->ID):
   case in_category(SPONSOR_GOLD, $post->ID):
   case in_category(SPONSOR_SILVER, $post->ID):
+  case in_category(SPONSOR_OPERATION, $post->ID):
     include_once get_template_directory() . '/posts/sponsor.php';
     break;
 
