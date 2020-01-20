@@ -2,6 +2,11 @@
 
 ## Next
 
+## 0.13.2
+
+- Feature: Created custom post for each supporter types
+- Refactor: Renamed sponsor to supporter
+
 ## 0.13.1
 
 - Bugfix: Operation Sponsor was not included in post

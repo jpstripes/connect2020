@@ -21,7 +21,9 @@
     <div class="row">
       <div class="col-12">
         <main class="article">
-          <?php // Managed via WP page ?>
+          <?php
+// Managed via WP page
+?>
           <p>
             Whatever description comes here.
           </p>

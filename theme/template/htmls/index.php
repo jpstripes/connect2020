@@ -31,10 +31,10 @@
     <a href="speaker.php">speaker</a>
   </li>
   <li>
-    <a href="sponsors.php">sponsors</a>
+    <a href="supporters.php">supporters</a>
   </li>
   <li>
-    <a href="sponsor.php">sponsor</a>
+    <a href="supporter.php">supporter</a>
   </li>
   <li>
     <a href="timetable.php">timetable</a>

@@ -85,7 +85,7 @@ $speaker = get_speaker_metas($post->ID); ?>
 
           <hr>
 
-          <a href="/<?=TIMETABLE_PAGE;?>">
+          <a href="/<?= TIMETABLE_PAGE ?>">
             一覧に戻る
           </a>
         </main>

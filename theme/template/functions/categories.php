@@ -10,22 +10,6 @@ function setup_categories()
     (object) [
       'slug' => NEWS_CATEGORY,
       'title' => 'News'
-    ],
-    (object) [
-      'slug' => SPONSOR_PLATINUM,
-      'title' => 'Sponsors (Platinum)'
-    ],
-    (object) [
-      'slug' => SPONSOR_GOLD,
-      'title' => 'Sponsors (Gold)'
-    ],
-    (object) [
-      'slug' => SPONSOR_SILVER,
-      'title' => 'Sponsors (Silver)'
-    ],
-    (object) [
-      'slug' => SPONSOR_OPERATION,
-      'title' => 'Sponsors (Operation)'
     ]
   ];
 
