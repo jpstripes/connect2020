@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.12.1
+
+- Bugfix: Button text was breaking on Safari
+
 ## 0.12.0
 
 - Feature: Disabled Theme Editor

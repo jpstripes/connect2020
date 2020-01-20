@@ -13,13 +13,13 @@ $speaker = get_speaker_metas($post->ID); ?>
           </h1>
 
           <nav class="subpage__hero-share">
-            <a class="btn btn-small btn-outline-light" href="<?= tweet_url(
+            <a class="btn btn-small btn-outline-light display--inline mr-1" href="<?= tweet_url(
               $post
             ) ?>" target="_blank">
               ツイート
             </a>
 
-            <a class="btn btn-small btn-outline-light" href="<?= facebook_url(
+            <a class="btn btn-small btn-outline-light display--inline ml-1" href="<?= facebook_url(
               $post
             ) ?>" target="_blank">
               Facebookに投稿
