@@ -12,7 +12,16 @@ add_action('admin_init', function () {
 /**
  * Enable featured image metabox.
  */
-add_theme_support('post-thumbnails', ['page', 'post']);
+add_theme_support('post-thumbnails', [
+  'page',
+  'post',
+  // Custom post types must listed here to enable featured images.
+  SESSION_POST_TYPE,
+  SUPPORTER_GOLD_POST_TYPE,
+  SUPPORTER_OPERATION_POST_TYPE,
+  SUPPORTER_PLATINUM_POST_TYPE,
+  SUPPORTER_SILVER_POST_TYPE,
+]);
 
 /**
  * Register custom script on admin.
