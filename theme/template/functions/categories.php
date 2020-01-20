@@ -12,14 +12,6 @@ function setup_categories()
       'title' => 'News'
     ],
     (object) [
-      'slug' => SPEAKER_SPONSORED,
-      'title' => 'Speakers (Sponsored)'
-    ],
-    (object) [
-      'slug' => SPEAKER_COMMUNITY,
-      'title' => 'Speakers (Community)'
-    ],
-    (object) [
       'slug' => SPONSOR_PLATINUM,
       'title' => 'Sponsors (Platinum)'
     ],
@@ -30,6 +22,10 @@ function setup_categories()
     (object) [
       'slug' => SPONSOR_SILVER,
       'title' => 'Sponsors (Silver)'
+    ],
+    (object) [
+      'slug' => SPONSOR_OPERATION,
+      'title' => 'Sponsors (Operation)'
     ]
   ];
 

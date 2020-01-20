@@ -2,6 +2,11 @@
 
 ## Next
 
+## 0.13.0
+
+- Cleanup: Removed speakers category and dependencies
+- Feature: Added Operation Sponsors section
+
 ## 0.12.1
 
 - Bugfix: Button text was breaking on Safari
