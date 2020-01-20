@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.13.3
+
+- Bugfix: Featured Image was not enabled on custom post types
+
 ## 0.13.2
 
 - Feature: Created custom post for each supporter types
