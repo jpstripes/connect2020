@@ -1,0 +1,7 @@
+.display {
+  // Intended to override Bootstrap 4 classes,
+  // since some button layout breaks with webfont.
+  &--inline {
+    display: inline !important;
+  }
+}

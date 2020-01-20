@@ -21,7 +21,7 @@
             10:00-19:00
           </p>
 
-          <a class="btn btn-lg btn-danger" href="#">
+          <a class="btn btn-lg btn-danger display--inline" href="#">
             チケット申し込み
           </a>
         </section>
