@@ -2,6 +2,8 @@
 
 ## Next
 
+## 0.13.0
+
 - Cleanup: Removed speakers category and dependencies
 - Feature: Added Operation Sponsors section
 
