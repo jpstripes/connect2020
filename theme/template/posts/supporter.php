@@ -6,7 +6,7 @@
       <div class="col-12">
         <section class="subpage__hero">
           <h1 class="subpage__hero-title">
-            スポンサー
+            サポーター
           </h1>
         </section>
       </div>
@@ -32,7 +32,7 @@
 
           <hr>
 
-          <a href="/<?= SPONSORS_PAGE ?>/">
+          <a href="/<?= SUPPORTERS_PAGE ?>/">
             一覧に戻る
           </a>
         </main>

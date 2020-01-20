@@ -3,15 +3,15 @@
  * Category names.
  */
 define('NEWS_CATEGORY', 'news');
-define('SPONSOR_PLATINUM', 'platinum-sponsors');
-define('SPONSOR_GOLD', 'gold-sponsors');
-define('SPONSOR_SILVER', 'silver-sponsors');
-define('SPONSOR_OPERATION', 'operation-sponsors');
+define('SUPPORTER_PLATINUM', 'platinum-supporters');
+define('SUPPORTER_GOLD', 'gold-supporters');
+define('SUPPORTER_SILVER', 'silver-supporters');
+define('SUPPORTER_OPERATION', 'operation-supporters');
 
 /**
  * Page names.
  */
-define('SPONSORS_PAGE', 'sponsors');
+define('SUPPORTERS_PAGE', 'supporters');
 define('TIMETABLE_PAGE', 'timetable');
 
 /**

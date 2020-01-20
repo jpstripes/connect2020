@@ -12,20 +12,20 @@ function setup_categories()
       'title' => 'News'
     ],
     (object) [
-      'slug' => SPONSOR_PLATINUM,
-      'title' => 'Sponsors (Platinum)'
+      'slug' => SUPPORTER_PLATINUM,
+      'title' => 'Supporters (Platinum)'
     ],
     (object) [
-      'slug' => SPONSOR_GOLD,
-      'title' => 'Sponsors (Gold)'
+      'slug' => SUPPORTER_GOLD,
+      'title' => 'Supporters (Gold)'
     ],
     (object) [
-      'slug' => SPONSOR_SILVER,
-      'title' => 'Sponsors (Silver)'
+      'slug' => SUPPORTER_SILVER,
+      'title' => 'Supporters (Silver)'
     ],
     (object) [
-      'slug' => SPONSOR_OPERATION,
-      'title' => 'Sponsors (Operation)'
+      'slug' => SUPPORTER_OPERATION,
+      'title' => 'Supporters (Operation)'
     ]
   ];
 

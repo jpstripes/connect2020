@@ -7,8 +7,8 @@ switch ($post->post_name) {
     include_once get_template_directory() . '/pages/news.php';
     break;
 
-  case SPONSORS_PAGE:
-    include_once get_template_directory() . '/pages/sponsors.php';
+  case SUPPORTERS_PAGE:
+    include_once get_template_directory() . '/pages/supporters.php';
     get_footer();
     break;
 
