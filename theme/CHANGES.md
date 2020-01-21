@@ -2,6 +2,8 @@
 
 ## Next
 
+## 0.14.0
+
 - Feature: Created Google Calendar link
 - Feature: Added coming soon switch on supporters block
 
