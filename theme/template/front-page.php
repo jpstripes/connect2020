@@ -21,9 +21,19 @@
             10:00-19:00
           </p>
 
-          <a class="btn btn-lg btn-danger display--inline" href="#">
-            チケット申し込み
-          </a>
+          <div class="mb-4">
+            <a class="btn btn-lg btn-danger display--inline" target="_blank" href="#">
+              &nbsp;&nbsp;
+              チケット申し込み
+              &nbsp;&nbsp;
+            </a>
+          </div>
+
+          <div>
+            <a class="home-tagline__calendar" target="_blank" href="<?= calendar_url() ?>">
+              Googleカレンダーに登録
+            </a>
+          </div>
         </section>
       </div>
     </div>
