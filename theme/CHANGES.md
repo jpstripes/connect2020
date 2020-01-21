@@ -2,6 +2,8 @@
 
 ## Next
 
+- Feature: Added coming soon switch on supporters block
+
 ## 0.13.3
 
 - Bugfix: Featured Image was not enabled on custom post types
