@@ -1,19 +1,5 @@
 <?php get_header(); ?>
 
-<?php
-// Generating add-to-calendar link.
-$calendar = implode([
-  'https://www.google.com/calendar/event?action=TEMPLATE',
-  'text=JP_Stripes+Connect+2020',
-  'dates=20200418T010000Z/20200418T100000Z',
-  'location='.urlencode('東京都港区南青山3-8-38 南青山東急ビル'),
-  'details='.urlencode(implode([
-    'Website',
-    'https://connect2020.jpstripes.com',
-  ], "\n")),
-], '&');
-?>
-
 <header class="header header--home">
   <div class="container">
     <div class="row">
@@ -44,7 +30,7 @@ $calendar = implode([
           </div>
 
           <div>
-            <a class="home-tagline__calendar" target="_blank" href="<?= $calendar ?>">
+            <a class="home-tagline__calendar" target="_blank" href="<?= calendar_url() ?>">
               Googleカレンダーに登録
             </a>
           </div>
