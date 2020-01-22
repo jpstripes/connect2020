@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.15.0
+
+- Feature: Added url field on supporters post
+
 ## 0.14.0
 
 - Feature: Created Google Calendar link
