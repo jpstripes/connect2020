@@ -12,6 +12,26 @@
     padding: 36px 48px;
   }
 
+  &__header {
+    margin-bottom: 60px;
+
+    &-title {
+      // font-size: 28px !important;
+      margin-bottom: 6px !important;
+      padding-bottom: 0;
+    }
+
+    &-url {
+      @include mobile-tablet {
+        font-size: 18px;
+      }
+
+      @include desktop {
+        font-size: 22px;
+      }
+    }
+  }
+
   // These tags will be rendered by WordPress therefore
   // recommended not to add any class.
 
