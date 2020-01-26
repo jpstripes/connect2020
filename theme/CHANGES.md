@@ -2,6 +2,8 @@
 
 ## Next
 
+## 0.16.0
+
 - Feature: Added favicons
 - Feature: Created Open Graph metadata block
 
