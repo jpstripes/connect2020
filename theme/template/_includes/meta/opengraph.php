@@ -14,7 +14,7 @@ $og_url = get_the_post_thumbnail_url(null, 'large');
 
 // Fallback to placeholder.
 if (!$og_url) {
-  $og_url = get_stylesheet_directory_uri() . '/assets/images/opengraph.png';
+  $og_url = get_template_directory_uri() . '/assets/images/opengraph/default.png';
 }
 
 $description = get_the_excerpt();
@@ -22,11 +22,26 @@ $description = get_the_excerpt();
 if (!$description) {
   $description = get_bloginfo('description');
 }
+
+$datetime = 'Y-m-d\TH:i:s';
+$published_at = get_post_time($datetime, false, $post->ID).'+00:00';
+$updated_at = get_post_modified_time($datetime, false, $post->ID).'+00:00';
 ?>
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="<?= $sitename ?>">
 <meta property="og:title" content="<?= $pagename ?>">
-<meta property="og:url" content="<?= get_permalink() ?>">
 <meta property="og:description" content="<?= $description ?>">
+<meta property="og:url" content="<?= get_permalink() ?>">
 <meta property="og:image" content="<?= $og_url ?>">
+<meta property="og:image:url" content="<?= $og_url ?>">
+<meta property="og:updated_time" content="<?= $updated_at ?>">
+<meta property="article:published_time" content="<?= $published_at ?>">
+<meta property="article:modified_time" content="<?= $updated_at ?>">
+
+<?php // Twitter Cards ?>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@jpstripes">
+
+<?php // Facebook Card ?>
+<meta name="fb:app_id" content="1826257457627959">

@@ -5,6 +5,8 @@
   "license": "MIT",
   "devDependencies": {
     "@prettier/plugin-php": "^0.12.0",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-imagemin": "^3.0.0",
     "prettier": "^1.19.1",
@@ -13,6 +15,8 @@
   },
   "dependencies": {
     "@wordpress/blocks": "^6.10.0",
-    "@wordpress/components": "^9.0.0"
+    "@wordpress/components": "^9.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }
