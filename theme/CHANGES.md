@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.17.0
+
+- Feature: Added Google Search Console verification file
+
 ## 0.16.0
 
 - Feature: Added favicons
