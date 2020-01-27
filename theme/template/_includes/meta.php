@@ -12,3 +12,6 @@
 <script src="<?= get_template_directory_uri() ?>/assets/js/jquery-3.4.1.slim.min.js"></script>
 <script src="<?= get_template_directory_uri() ?>/assets/js/popper.min.js"></script>
 <script src="<?= get_template_directory_uri() ?>/assets/js/bootstrap.min.js"></script>
+
+<?php // Google Search Console ?>
+<meta name="google-site-verification" content="ydEULsJL4k0PxCq9ZpIkiQOaxFZ1QFOV3QLMeQsj4Uo" />
