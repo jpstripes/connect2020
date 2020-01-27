@@ -2,6 +2,12 @@
 
 ## Next
 
+## 0.17.2
+
+- Feature: Added call-to-action nav
+- Minor: Added address on front page
+- Refactor: Changed tagline message
+
 ## 0.17.1
 
 - Refactor: Use meta tag verification

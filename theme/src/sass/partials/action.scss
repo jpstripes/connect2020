@@ -1,0 +1,31 @@
+.action {
+  background: #f0f0ff;
+
+  @include mobile-tablet {
+    padding: 40px 0;
+  }
+
+  @include desktop {
+    padding: 80px 0;
+  }
+
+  &__title {
+    color: #323232;
+    text-align: center;
+
+    @include mobile-tablet {
+      font-size: 16px;
+    }
+
+    @include desktop {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  &__button {
+    @include mobile-tablet {
+      font-size: 15px;
+    }
+  }
+}

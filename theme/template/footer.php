@@ -11,6 +11,8 @@ $footer_menus = get_pages([
   <?php include get_template_directory() . '/_includes/social.php'; ?>
 </nav>
 
+<?php include_once get_template_directory() . '/_includes/action.php'; ?>
+
 <footer class="footer">
   <div class="container">
     <div class="row">

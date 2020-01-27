@@ -38,6 +38,13 @@
     &__nav {
       font-size: 32px;
       margin-bottom: 40px;
+
+      &-access {
+        color: #fff;
+        display: block;
+        font-size: 19px;
+        opacity: .85;
+      }
     }
 
     &__calendar {
