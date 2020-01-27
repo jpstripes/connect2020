@@ -8,10 +8,10 @@
           <div class="home-tagline__symbol"></div>
 
           <p class="home-tagline__message">
-            Stripeを使っているエンジニアとビジネス関係者が集まる
+            最新サブスク/SaaS/EC決済事例とトレンドが1日でわかる
             <br>
             <strong>
-              日本最大級の決済系イベント
+              Stripeのユーザーカンファレンス
             </strong>
           </p>
 
@@ -19,6 +19,10 @@
             2020年4月18日 (土)
             <br>
             10:00-19:00
+
+            <a class="home-tagline__nav-access" href="https://goo.gl/maps/wX9QCeNf7LpuSayC9">
+              東京都港区南青山3-8-38 南青山東急ビル🧭
+            </a>
           </p>
 
           <div class="mb-4">
