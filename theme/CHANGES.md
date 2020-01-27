@@ -2,7 +2,7 @@
 
 ## Next
 
-## 0.17.2
+## 0.18.0
 
 - Feature: Added call-to-action nav
 - Minor: Added address on front page
