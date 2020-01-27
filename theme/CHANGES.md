@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.17.1
+
+- Refactor: Use meta tag verification
+
 ## 0.17.0
 
 - Feature: Added Google Search Console verification file
