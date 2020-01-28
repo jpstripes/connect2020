@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.19.1
+
+- Bugfix: Build artifact url was not idempotent
+
 ## 0.19.0
 
 - Feature: Added tracker classes
