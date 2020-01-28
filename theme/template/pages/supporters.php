@@ -174,7 +174,7 @@ $posts = [
                   サポーターになって一緒にイベントを盛り上げませんか？
                 </p>
 
-                <a class="btn btn-block btn-lg btn-primary" href="/supporters">
+                <a class="btn btn-block btn-lg btn-primary" href="/support-us/">
                   サポーターになる！
                 </a>
               </div>
