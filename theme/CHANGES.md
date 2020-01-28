@@ -2,6 +2,11 @@
 
 ## Next
 
+## 0.18.3
+
+- Feature: Enabled excerpt on post
+- Bugfix: Front page was rendering the latest post instead of bloginfo
+
 ## 0.18.2
 
 - Minor: Tweaks

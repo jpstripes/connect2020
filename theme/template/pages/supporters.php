@@ -77,7 +77,9 @@ $posts = [
           <?php if ($posts[SUPPORTER_GOLD_POST_TYPE]): ?>
             <?php foreach ($posts[SUPPORTER_GOLD_POST_TYPE] as $p): ?>
               <div class="col-6 col-sm-3">
-                <a class="supporter__summary" href="<?= get_permalink($p->ID) ?>">
+                <a class="supporter__summary" href="<?= get_permalink(
+                  $p->ID
+                ) ?>">
                   <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>
                   <?php if ($thumbnail): ?>
                     <img class="supporter__summary-image img-fluid" src="<?= $thumbnail ?>">
@@ -149,7 +151,9 @@ $posts = [
           <?php if ($posts[SUPPORTER_SILVER_POST_TYPE]): ?>
             <?php foreach ($posts[SUPPORTER_SILVER_POST_TYPE] as $p): ?>
               <div class="col-4 col-sm-2">
-                <a class="supporter__summary" href="<?= get_permalink($p->ID) ?>">
+                <a class="supporter__summary" href="<?= get_permalink(
+                  $p->ID
+                ) ?>">
                   <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>
                   <?php if ($thumbnail): ?>
                     <img class="supporter__summary-image img-fluid" src="<?= $thumbnail ?>">
