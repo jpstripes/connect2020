@@ -17,10 +17,7 @@
     },
     "opengraph": {
       "name": "events/opengraph",
-      "attributes": [
-        "opengraphImageUrl",
-        "opengraphMessage"
-      ]
+      "attributes": ["opengraphImageUrl", "opengraphMessage"]
     }
   }
 }

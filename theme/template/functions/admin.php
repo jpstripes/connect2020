@@ -20,7 +20,7 @@ add_theme_support('post-thumbnails', [
   SUPPORTER_GOLD_POST_TYPE,
   SUPPORTER_OPERATION_POST_TYPE,
   SUPPORTER_PLATINUM_POST_TYPE,
-  SUPPORTER_SILVER_POST_TYPE,
+  SUPPORTER_SILVER_POST_TYPE
 ]);
 
 /**
@@ -37,4 +37,4 @@ add_action('init', function () {
 /**
  * Add excerpt on pages.
  */
-add_post_type_support( 'page', 'excerpt' );
+add_post_type_support('page', 'excerpt');
