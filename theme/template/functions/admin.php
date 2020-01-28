@@ -33,3 +33,8 @@ add_action('init', function () {
     ['wp-blocks', 'wp-element', 'wp-data', 'wp-editor']
   );
 });
+
+/**
+ * Add excerpt on pages.
+ */
+add_post_type_support( 'page', 'excerpt' );

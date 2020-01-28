@@ -3,7 +3,7 @@
  * OpenGraph Metadata
  */
 $sitename = get_bloginfo('name');
-$pagename = get_the_title();
+$pagename = is_front_page() ? get_bloginfo('name') : get_the_title();
 
 // Fallback to sitename.
 if (!$pagename) {
@@ -17,11 +17,13 @@ if (!$og_url) {
   $og_url = get_template_directory_uri() . '/assets/images/opengraph/default.png';
 }
 
-$description = get_the_excerpt();
+$description = is_front_page() ? get_bloginfo('description') : get_the_excerpt();
 
 if (!$description) {
   $description = get_bloginfo('description');
 }
+
+$page_url = is_front_page() ? get_bloginfo('url') : get_permalink();
 
 $datetime = 'Y-m-d\TH:i:s';
 $published_at = get_post_time($datetime, false, $post->ID).'+00:00';
@@ -32,7 +34,7 @@ $updated_at = get_post_modified_time($datetime, false, $post->ID).'+00:00';
 <meta property="og:site_name" content="<?= $sitename ?>">
 <meta property="og:title" content="<?= $pagename ?>">
 <meta property="og:description" content="<?= $description ?>">
-<meta property="og:url" content="<?= get_permalink() ?>">
+<meta property="og:url" content="<?= $page_url ?>">
 <meta property="og:image" content="<?= $og_url ?>">
 <meta property="og:image:url" content="<?= $og_url ?>">
 <meta property="og:updated_time" content="<?= $updated_at ?>">
