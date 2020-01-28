@@ -25,7 +25,7 @@ $url = get_post_meta($post->ID, 'url', true);
       <div class="col-12 col-sm-4">
         <?php if ($thumbnail): ?>
           <?php if ($url): ?>
-            <a href="<?= $url ?>" target="_blank">
+            <a class="js-track-supporter-urls-click" href="<?= $url ?>" target="_blank">
               <img class="img-fluid" src="<?= $thumbnail ?>">
             </a>
           <?php else: ?>
@@ -44,7 +44,7 @@ $url = get_post_meta($post->ID, 'url', true);
             </h1>
 
             <?php if ($url): ?>
-              <a class="article__header-url" href="<?= $url ?>" target="_blank">
+              <a class="article__header-url js-track-supporter-urls-click" href="<?= $url ?>" target="_blank">
                 <?= $url ?>
               </a>
             <?php endif; ?>
