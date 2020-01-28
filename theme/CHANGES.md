@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.18.2
+
+- Minor: Tweaks
+
 ## 0.18.1
 
 - Minor: Tweaks
