@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.19.0
+
+- Feature: Added tracker classes
+
 ## 0.18.3
 
 - Feature: Enabled excerpt on post
