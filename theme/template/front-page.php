@@ -26,7 +26,7 @@
           </p>
 
           <div class="mb-4">
-            <a class="btn btn-lg btn-danger display--inline" target="_blank" href="/tickets/">
+            <a class="btn btn-lg btn-danger display--inline" href="/tickets/">
               &nbsp;&nbsp;
               チケット申し込み
               &nbsp;&nbsp;
