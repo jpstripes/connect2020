@@ -18,8 +18,13 @@ function tweet_url($post)
     return;
   }
 
-  return 'https://twitter.com/intent/tweet?hashtags=JP_Stripes&text=' .
-    urlencode($post->post_title . ' ' . get_permalink($post->ID));
+  $qs = implode([
+    'hashtags=JP_Stripes,JPSC2020',
+    'via=jpstripes',
+    'text=' . urlencode($post->post_title . ' ' . get_permalink($post->ID) . "\n"),
+  ], '&');
+
+  return 'https://twitter.com/intent/tweet?' . $qs;
 }
 
 function facebook_url($post)
