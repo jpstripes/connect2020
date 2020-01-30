@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.19.3
+
+- Minor: Use even more smaller font size for supporter name, due to layout break
+
 ## 0.19.2
 
 - Minor: Use smaller font size for supporter name
