@@ -2,6 +2,11 @@
 
 ## Next
 
+## 0.19.2
+
+- Minor: Use smaller font size for supporter name
+- Bugfix: Ensured to have FQDN on Open Graph image
+
 ## 0.19.1
 
 - Bugfix: Build artifact url was not idempotent
