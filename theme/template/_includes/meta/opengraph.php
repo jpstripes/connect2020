@@ -10,12 +10,17 @@ if (!$pagename) {
   $pagename = $sitename;
 }
 
-$og_url = get_the_post_thumbnail_url(null, 'large');
+$og_url = get_the_post_thumbnail_url(null, 'full');
 
 // Fallback to placeholder.
 if (!$og_url) {
   $og_url =
     get_template_directory_uri() . '/assets/images/opengraph/default.png';
+}
+
+// Ensure Open Graph image has FQDN, since it may start with absolute path.
+if (strpos($og_url, 'http') === false) {
+  $og_url = get_bloginfo('url') . $og_url;
 }
 
 $description = is_front_page()
