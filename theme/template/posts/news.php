@@ -28,7 +28,7 @@
             <img class="img-fluid" src="<?= $thumbnail ?>">
           <?php endif; ?>
 
-          <?= $post->post_content ?>
+          <?= apply_filters('the_content', $post->post_content) ?>
         </main>
       </div>
     </div>

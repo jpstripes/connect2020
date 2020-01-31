@@ -2,6 +2,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="https://gmpg.org/xfn/11">
 
+<?php if (is_home() || is_front_page()): ?>
+  <title><?= get_bloginfo('name') ?></title>
+<?php else: ?>
+  <title><?= wp_title('') ?></title>
+<?php endif; ?>
+
 <?php wp_head(); ?>
 <?php include_once dirname(__FILE__) . '/meta/favicon.php'; ?>
 <?php include_once dirname(__FILE__) . '/meta/opengraph.php'; ?>
