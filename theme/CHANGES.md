@@ -2,6 +2,10 @@
 
 ## Next
 
+## 1.0.0
+
+- Bugfix: Title tag was not implemented
+
 ## 0.19.3
 
 - Minor: Use even more smaller font size for supporter name, due to layout break
