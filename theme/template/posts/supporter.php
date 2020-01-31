@@ -50,7 +50,7 @@ $url = get_post_meta($post->ID, 'url', true);
             <?php endif; ?>
           </header>
 
-          <?= $post->post_content ?>
+          <?= apply_filters('the_content', $post->post_content) ?>
 
           <hr>
 
