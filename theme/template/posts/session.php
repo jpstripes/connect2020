@@ -36,7 +36,7 @@ $speaker = get_speaker_metas($post->ID); ?>
     <div class="row">
       <div class="col-12">
         <main class="article">
-          <?= $post->post_content ?>
+          <?= apply_filters('the_content', $post->post_content) ?>
 
           <h2>
             登壇者について
