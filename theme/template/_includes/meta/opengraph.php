@@ -13,7 +13,7 @@ if (!$pagename) {
 $og_url = get_the_post_thumbnail_url(null, 'full');
 
 // Fallback to placeholder.
-if (!$og_url) {
+if (is_front_page() || !$og_url) {
   $og_url =
     get_template_directory_uri() . '/assets/images/opengraph/default.png';
 }
