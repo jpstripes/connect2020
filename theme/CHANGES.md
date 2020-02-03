@@ -2,6 +2,10 @@
 
 ## Next
 
+## 1.0.1
+
+- Bugfix: Incorrect Open Graph image on front page
+
 ## 1.0.0
 
 - Bugfix: oEmbed DOMs are not present due to lack of apply_filter
