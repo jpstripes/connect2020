@@ -2,6 +2,8 @@
 
 ## Next
 
+## 1.1.0
+
 - Feature: Stick call-to-action block on mobile
 - Feature: Highlighted social buttons
 - Bugfix: Social buttons on front page was referencing news
