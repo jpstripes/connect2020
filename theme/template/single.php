@@ -8,6 +8,7 @@ switch (get_post_type($post->ID)) {
   case SUPPORTER_GOLD_POST_TYPE:
   case SUPPORTER_SILVER_POST_TYPE:
   case SUPPORTER_OPERATION_POST_TYPE:
+  case SUPPORTER_SPECIAL_POST_TYPE:
     include_once get_template_directory() . '/posts/supporter.php';
     break;
 

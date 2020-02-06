@@ -26,9 +26,15 @@
     background: #fff;
     justify-content: center;
 
+    &--special {
+      @include desktop {
+        border: 10px solid #fff;
+      }
+    }
+
     &--platinum {
       @include desktop {
-        border: 6px solid #ddd;
+        border: 10px solid #fff;
       }
     }
 
@@ -52,9 +58,9 @@
   &__summary {
     color: inherit;
     display: block;
+    margin-bottom: 14px;
     text-align: center;
     text-decoration: none;
-    margin-bottom: 14px;
 
     &-image {
       margin-bottom: 4px;

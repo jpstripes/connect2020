@@ -2,6 +2,8 @@
 
 ## Next
 
+- Feature: Created special supporter post type
+
 ## 1.0.1
 
 - Bugfix: Incorrect Open Graph image on front page
