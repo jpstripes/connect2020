@@ -2,6 +2,7 @@
 
 ## Next
 
+- Feature: Highlighted social buttons
 - Bugfix: Social buttons on front page was referencing news
 - Feature: Created special supporter post type
 

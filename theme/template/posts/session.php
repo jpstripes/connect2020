@@ -83,7 +83,9 @@ $speaker = get_speaker_metas($post->ID); ?>
             </div>
           </section>
 
-          <hr>
+          <nav class="article__social">
+            <?php include get_template_directory() . '/_includes/social.php'; ?>
+          </nav>
 
           <a href="/<?= TIMETABLE_PAGE ?>">
             一覧に戻る

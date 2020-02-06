@@ -3,12 +3,10 @@
   font-size: 17px;
 
   @include mobile-tablet {
-    margin-bottom: 60px;
     padding: 36px 24px;
   }
 
   @include desktop {
-    margin-bottom: 60px;
     padding: 36px 48px;
   }
 
@@ -29,6 +27,18 @@
       @include desktop {
         font-size: 22px;
       }
+    }
+  }
+
+  &__social {
+    text-align: center;
+
+    @include mobile-tablet {
+      margin-top: 30px;
+    }
+
+    @include desktop {
+      margin-top: 60px;
     }
   }
 
