@@ -4,13 +4,15 @@
   padding: 40px;
 
   &:hover {
-    background-color: #fff;
+    background-blend-mode: normal;
   }
 
   &--twitter {
     background: url(../images/social/twitter.svg) no-repeat top center;
-    background-position-y: 14px;
-    background-size: 50px;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.15);
+    background-position-y: 17px;
+    background-size: 55px;
 
     &-small {
       background-size: 40px;
@@ -19,6 +21,8 @@
 
   &--facebook {
     background: url(../images/social/facebook.svg) no-repeat top center;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.15);
     background-position-y: 14px;
     background-size: 50px;
 

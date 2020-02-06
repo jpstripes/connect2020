@@ -18,6 +18,22 @@ function tweet_url($post)
     return;
   }
 
+  $prefix = 'https://twitter.com/intent/tweet?';
+
+  if (is_front_page()) {
+    $qs = implode(
+      [
+        'hashtags=JP_Stripes,JPSC2020',
+        'via=jpstripes',
+        'text=' .
+          urlencode(get_bloginfo('name') . ' ' . get_bloginfo('url') . "\n")
+      ],
+      '&'
+    );
+
+    return $prefix . $qs;
+  }
+
   $qs = implode(
     [
       'hashtags=JP_Stripes,JPSC2020',
@@ -28,7 +44,7 @@ function tweet_url($post)
     '&'
   );
 
-  return 'https://twitter.com/intent/tweet?' . $qs;
+  return $prefix . $qs;
 }
 
 function facebook_url($post)
@@ -37,7 +53,9 @@ function facebook_url($post)
     return;
   }
 
-  return 'https://www.facebook.com/sharer/sharer.php?u=' . share_url($post);
+  $url = is_front_page() ? get_bloginfo('url') : share_url($post);
+
+  return 'https://www.facebook.com/sharer/sharer.php?u=' . $url;
 }
 
 function line_url($post)
