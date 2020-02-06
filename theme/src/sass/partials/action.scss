@@ -1,11 +1,16 @@
 .action {
-  background: #f0f0ff;
-
   @include mobile-tablet {
-    padding: 40px 0;
+    background: rgba(255, 255, 255, 0.6);
+    bottom: 0;
+    left: 0;
+    padding: 14px 0;
+    position: fixed;
+    right: 0;
+    z-index: 1030;
   }
 
   @include desktop {
+    background: #f0f0ff;
     padding: 80px 0;
   }
 
@@ -14,7 +19,7 @@
     text-align: center;
 
     @include mobile-tablet {
-      font-size: 16px;
+      display: none;
     }
 
     @include desktop {

@@ -5,6 +5,11 @@
 
 // Retrieve all posts.
 $posts = [
+  SUPPORTER_SPECIAL_POST_TYPE => get_posts([
+    'post_type' => SUPPORTER_SPECIAL_POST_TYPE,
+    'post_status' => 'publish',
+    'numberposts' => -1
+  ]),
   SUPPORTER_PLATINUM_POST_TYPE => get_posts([
     'post_type' => SUPPORTER_PLATINUM_POST_TYPE,
     'post_status' => 'publish',
@@ -27,6 +32,37 @@ $posts = [
   ])
 ]; ?>
 <section class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="supporter__header">
+          Special Supporter
+        </h1>
+      </div>
+    </div>
+
+    <div class="row supporter__list supporter__list--special">
+      <?php if ($posts[SUPPORTER_SPECIAL_POST_TYPE]): ?>
+        <?php foreach ($posts[SUPPORTER_SPECIAL_POST_TYPE] as $p): ?>
+          <div class="col-12 col-sm-3">
+            <a class="supporter__summary" href="<?= get_permalink($p->ID) ?>">
+              <?php $thumbnail = get_the_post_thumbnail_url($p->ID); ?>
+              <?php if ($thumbnail): ?>
+                <img class="supporter__summary-image img-fluid" src="<?= $thumbnail ?>">
+              <?php else: ?>
+                <img class="supporter__summary-image img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/placeholder.png">
+              <?php endif; ?>
+
+              <p class="supporter__summary-name">
+                <?= $p->post_title ?>
+              </p>
+            </a>
+          </div>
+        <?php endforeach; ?>
+      <?php endif; ?>
+    </div>
+  </div>
+
   <div class="container">
     <div class="row">
       <div class="col-12">

@@ -1,6 +1,14 @@
 .footer {
   background: #4648af;
-  padding: 40px 0 30px;
+
+  @include mobile-tablet {
+    // Add extra padding for fixed action block.
+    padding: 40px 0 120px;
+  }
+
+  @include desktop {
+    padding: 40px 0 30px;
+  }
 
   &__logo {
     display: block;

@@ -2,6 +2,13 @@
 
 ## Next
 
+## 1.1.0
+
+- Feature: Stick call-to-action block on mobile
+- Feature: Highlighted social buttons
+- Bugfix: Social buttons on front page was referencing news
+- Feature: Created special supporter post type
+
 ## 1.0.1
 
 - Bugfix: Incorrect Open Graph image on front page
