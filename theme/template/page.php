@@ -7,6 +7,16 @@ switch ($post->post_name) {
     include_once get_template_directory() . '/pages/news.php';
     break;
 
+  case MEMBERS_PAGE:
+    include_once get_template_directory() . '/pages/members.php';
+    get_footer();
+    break;
+
+  case SUPPORTERS_PAGE:
+    include_once get_template_directory() . '/pages/supporters.php';
+    get_footer();
+    break;
+
   case SUPPORTERS_PAGE:
     include_once get_template_directory() . '/pages/supporters.php';
     get_footer();

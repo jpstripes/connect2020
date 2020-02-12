@@ -2,6 +2,8 @@
 
 ## Next
 
+- Feature: Created Members post type
+
 ## 1.1.0
 
 - Feature: Stick call-to-action block on mobile
