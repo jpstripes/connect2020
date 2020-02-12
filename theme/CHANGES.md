@@ -2,6 +2,8 @@
 
 ## Next
 
+## 1.2.0
+
 - Feature: Created Members post type
 
 ## 1.1.0
