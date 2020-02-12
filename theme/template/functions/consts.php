@@ -12,6 +12,7 @@ define('SUPPORTER_SPECIAL', 'special-supporters');
 /**
  * Page names.
  */
+define('MEMBERS_PAGE', 'members');
 define('SUPPORTERS_PAGE', 'supporters');
 define('TIMETABLE_PAGE', 'timetable');
 
@@ -24,3 +25,4 @@ define('SUPPORTER_GOLD_POST_TYPE', 'gold-supporter');
 define('SUPPORTER_SILVER_POST_TYPE', 'silver-supporter');
 define('SUPPORTER_OPERATION_POST_TYPE', 'operation-supporter');
 define('SUPPORTER_SPECIAL_POST_TYPE', 'special-supporter');
+define('MEMBER_POST_TYPE', 'member');

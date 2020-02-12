@@ -16,6 +16,7 @@ add_theme_support('post-thumbnails', [
   'page',
   'post',
   // Custom post types must listed here to enable featured images.
+  MEMBER_POST_TYPE,
   SESSION_POST_TYPE,
   SUPPORTER_GOLD_POST_TYPE,
   SUPPORTER_OPERATION_POST_TYPE,

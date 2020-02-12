@@ -9,6 +9,7 @@ include_once dirname(__FILE__) . '/consts.php';
 include_once dirname(__FILE__) . '/admin.php';
 include_once dirname(__FILE__) . '/blocks.php';
 include_once dirname(__FILE__) . '/categories.php';
+include_once dirname(__FILE__) . '/post-member.php';
 include_once dirname(__FILE__) . '/post-session.php';
 include_once dirname(__FILE__) . '/post-supporter-gold.php';
 include_once dirname(__FILE__) . '/post-supporter-operation.php';

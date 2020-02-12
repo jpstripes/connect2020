@@ -1,5 +1,9 @@
 <?php
 switch (get_post_type($post->ID)) {
+  case MEMBER_POST_TYPE:
+    include_once get_template_directory() . '/posts/member.php';
+    break;
+
   case SESSION_POST_TYPE:
     include_once get_template_directory() . '/posts/session.php';
     break;
