@@ -8,8 +8,7 @@ $posts = get_posts([
   'post_type' => MEMBER_POST_TYPE,
   'post_status' => 'publish',
   'numberposts' => -1
-]);
-?>
+]); ?>
 <section class="wrapper">
   <div class="container">
     <div class="row supporter__list supporter__list--special">
