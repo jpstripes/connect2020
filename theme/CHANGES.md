@@ -2,6 +2,11 @@
 
 ## Next
 
+## 1.2.1
+
+- Refactor: Slimmed session post width
+- Feature: Added timetable cell grayout steps
+
 ## 1.2.0
 
 - Feature: Created Members post type
