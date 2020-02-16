@@ -23,7 +23,26 @@ add_action('init', function () {
   }
 
   /**
-   * events/speaker block.
+   * events/speakers block.
+   */
+  register_block_type(BLOCKS['events']['speakers']['name'], [
+    'editor_script' => BLOCKS['setting']['bundle']
+  ]);
+
+  // Register meta attributes.
+  foreach (BLOCKS['events']['speakers']['attributes'] as $a) {
+    // Registering post meta to `session` post type.
+    // Using the block in the default post will not save any data
+    // unless you explicitly call register_post_meta('post'..)
+    register_post_meta(SESSION_POST_TYPE, $a, [
+      'show_in_rest' => true,
+      'single' => true,
+      'type' => 'string'
+    ]);
+  }
+
+  /**
+   * events/opengraph block.
    */
   register_block_type(BLOCKS['events']['opengraph']['name'], [
     'editor_script' => BLOCKS['setting']['bundle']
@@ -74,6 +93,36 @@ function get_speaker_metas($id = null)
     'twitter' => $got['twitter'][0],
     'facebook' => $got['facebook'][0]
   ];
+}
+
+/**
+ * Retrieve speakers metadata.
+ */
+function get_speakers_metas($id = null)
+{
+  $got = get_post_meta($id, null, true);
+
+  $outs = [];
+
+  for ($i = 1; $i <= 5; $i++) {
+    if (empty($got['name_' . strval($i)][0])) {
+      continue;
+    }
+
+    array_push(
+      $outs,
+      (object) [
+        'name' => $got['name_' . strval($i)][0],
+        'company' => $got['company_' . strval($i)][0],
+        'profile' => $got['profile_' . strval($i)][0],
+        'iconUrl' => $got['iconUrl_' . strval($i)][0],
+        'twitter' => $got['twitter_' . strval($i)][0],
+        'facebook' => $got['facebook_' . strval($i)][0]
+      ]
+    );
+  }
+
+  return $outs;
 }
 
 /**

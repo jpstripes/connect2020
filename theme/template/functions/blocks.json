@@ -15,6 +15,41 @@
         "facebook"
       ]
     },
+    "speakers": {
+      "name": "events/speakers",
+      "attributes": [
+        "name_1",
+        "company_1",
+        "profile_1",
+        "iconUrl_1",
+        "twitter_1",
+        "facebook_1",
+        "name_2",
+        "company_2",
+        "profile_2",
+        "iconUrl_2",
+        "twitter_2",
+        "facebook_2",
+        "name_3",
+        "company_3",
+        "profile_3",
+        "iconUrl_3",
+        "twitter_3",
+        "facebook_3",
+        "name_4",
+        "company_4",
+        "profile_4",
+        "iconUrl_4",
+        "twitter_4",
+        "facebook_4",
+        "name_5",
+        "company_5",
+        "profile_5",
+        "iconUrl_5",
+        "twitter_5",
+        "facebook_5"
+      ]
+    },
     "opengraph": {
       "name": "events/opengraph",
       "attributes": ["opengraphImageUrl", "opengraphMessage"]
