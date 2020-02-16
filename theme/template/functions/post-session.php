@@ -20,8 +20,7 @@ add_action('init', function () {
           'content' => '講演内容'
         ]
       ],
-      ['core/paragraph'],
-      [BLOCKS['events']['speaker']['name']]
+      ['core/paragraph']
     ]
   ));
 });

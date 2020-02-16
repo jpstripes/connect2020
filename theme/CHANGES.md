@@ -2,6 +2,10 @@
 
 ## Next
 
+## 1.3.0
+
+- Feature: Created speakers block for panel discussions
+
 ## 1.2.1
 
 - Refactor: Slimmed session post width
