@@ -32,6 +32,8 @@ $posts = [
   ])
 ]; ?>
 <section class="wrapper">
+  <?php include get_template_directory() . '/_includes/notification.php'; ?>
+
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -205,20 +207,22 @@ $posts = [
             </a>
           <?php endif; ?>
 
-          <?php if ($posts[SUPPORTER_SILVER_POST_TYPE]): ?>
-            <footer class="col-12">
-              <hr>
+          <?php if (false): ?>
+            <?php if ($posts[SUPPORTER_SILVER_POST_TYPE]): ?>
+              <footer class="col-12">
+                <hr>
 
-              <div class="col-12 col-sm-6 offset-sm-3">
-                <p class="text-center">
-                  サポーターになって一緒にイベントを盛り上げませんか？
-                </p>
+                <div class="col-12 col-sm-6 offset-sm-3">
+                  <p class="text-center">
+                    サポーターになって一緒にイベントを盛り上げませんか？
+                  </p>
 
-                <a class="btn btn-block btn-lg btn-primary" href="/support-us/">
-                  サポーターになる！
-                </a>
-              </div>
-            </footer>
+                  <a class="btn btn-block btn-lg btn-primary" href="/support-us/">
+                    サポーターになる！
+                  </a>
+                </div>
+              </footer>
+            <?php endif; ?>
           <?php endif; ?>
         </div>
       </div>

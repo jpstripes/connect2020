@@ -16,28 +16,10 @@
           </p>
 
           <p class="home-tagline__nav">
-            2020年4月18日 (土)
-            <br>
-            10:00-19:00
-
-            <a class="home-tagline__nav-access" href="https://goo.gl/maps/wX9QCeNf7LpuSayC9" target="_blank">
-              東京都港区南青山3-8-38 南青山東急ビル🧭
+            <a class="btn btn-lg btn-danger display--inline" href="/news/notice-of-postpone/">
+              開催延期のお知らせ
             </a>
           </p>
-
-          <div class="mb-4">
-            <a class="btn btn-lg btn-danger display--inline" href="/tickets/">
-              &nbsp;&nbsp;
-              チケット申し込み
-              &nbsp;&nbsp;
-            </a>
-          </div>
-
-          <div>
-            <a class="home-tagline__calendar" target="_blank" href="<?= calendar_url() ?>">
-              Googleカレンダーに登録
-            </a>
-          </div>
         </section>
       </div>
     </div>

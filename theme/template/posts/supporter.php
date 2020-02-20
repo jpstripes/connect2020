@@ -20,6 +20,8 @@ $url = get_post_meta($post->ID, 'url', true);
 </header>
 
 <section class="wrapper">
+  <?php include get_template_directory() . '/_includes/notification.php'; ?>
+
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-4">
