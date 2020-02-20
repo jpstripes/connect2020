@@ -2,6 +2,10 @@
 
 ## Next
 
+## 1.4.0
+
+- Feature: Added notification
+
 ## 1.3.0
 
 - Feature: Created speakers block for panel discussions

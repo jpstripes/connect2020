@@ -1,3 +1,4 @@
+<?php if (false): ?>
 <section class="action">
   <div class="container">
     <div class="row">
@@ -15,3 +16,4 @@
     </div>
   </div>
 </section>
+<?php endif; ?>

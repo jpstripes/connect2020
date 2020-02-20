@@ -10,6 +10,8 @@ $posts = get_posts([
   'numberposts' => -1
 ]); ?>
 <section class="wrapper">
+  <?php include get_template_directory() . '/_includes/notification.php'; ?>
+
   <div class="container">
     <div class="row supporter__list supporter__list--special">
       <?php foreach ($posts as $p): ?>
