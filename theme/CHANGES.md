@@ -2,6 +2,10 @@
 
 ## Next
 
+## 1.4.1
+
+- Refactor: Swapped default Open Graph image
+
 ## 1.4.0
 
 - Feature: Added notification
