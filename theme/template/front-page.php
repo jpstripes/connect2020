@@ -16,11 +16,13 @@
           </p>
 
           <p class="home-tagline__nav">
-            <a class="btn btn-lg btn-danger" href="/news/notice-of-postpone/">
+            <a class="btn btn-lg btn-danger display--inline" href="/news/notice-of-postpone/">
               開催延期のお知らせ
             </a>
 
-            <a class="btn btn-lg btn-warning" href="https://forms.gle/js1ouwwXsS5sBoPd8" target="_blank">
+            <br>
+
+            <a class="btn btn-lg btn-warning display--inline" href="https://forms.gle/js1ouwwXsS5sBoPd8" target="_blank">
               登録再開時にメールを受け取る
             </a>
           </p>
