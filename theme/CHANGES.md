@@ -2,6 +2,10 @@
 
 ## Next
 
+## 1.4.3
+
+- Bugfix: Fixed button layout broke on MacOS Safari
+
 ## 1.4.2
 
 - Feature: Added notification nav on front page and notification banner
