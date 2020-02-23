@@ -2,6 +2,10 @@
 
 ## Next
 
+## 1.4.2
+
+- Feature: Added notification nav on front page and notification banner
+
 ## 1.4.1
 
 - Refactor: Swapped default Open Graph image
